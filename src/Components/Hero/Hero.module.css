@@ -1,0 +1,89 @@
+.Hero {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.HeroImage {
+    display: flex;
+    width: 100vw;
+    height: 52vw;
+    z-index: 1;
+}
+
+.NavText {
+    display: flex;
+    font-family: "Cedarville Cursive"; 
+    font-size: 2.2vw;
+    color: #C1EDF4;
+    position: relative;
+    z-index: 3;
+}
+
+.HeroBody {
+    display: flex;
+    font-family: "BIZ UDPGothic"; 
+    font-size: 1.87vw;
+    letter-spacing: 0vw;
+    color: #C1EDF4;
+    position: relative;
+    z-index: 3;
+    margin-left: 5vw;
+    margin-top: -40vw;
+
+}
+
+.HeroHeader {
+    display: flex;
+    font-family: "BIZ UDPGothic"; 
+    font-size: 2.66vw;
+    letter-spacing: .02vw;
+    color: #ffff;
+    position: relative;
+    z-index: 3;
+    font-weight: 600;
+    margin-left: 5vw;
+    margin-top: 3vw;
+    
+
+}
+
+.HeroSub {
+    display: flex;
+    font-family: "BIZ UDPGothic"; 
+    font-size: 1.87vw;
+    letter-spacing: 0vw;
+    color: #C1EDF4;
+    position: relative;
+    z-index: 3;
+    margin-left: 5vw;
+    margin-top: 3vw;
+}
+
+.Button {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 1vw;
+    font-family: "BIZ UDPGothic"; 
+    font-size: 1.09vw;
+    letter-spacing: 0.09vw;
+    font-weight: medium;
+    color: white;
+    background-color: #f16a8d;
+    border: .1vw solid #fcdfe7;
+    border-radius: .8vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    z-index: 3;
+    box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+} 
+
+.Button:hover {
+    background-color: #fcdfe7;
+    color: #F16A8D;
+    font-weight: bold;
+    
+}

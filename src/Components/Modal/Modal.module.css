@@ -1,0 +1,103 @@
+.Modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.20);
+    backdrop-filter: blur(1vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+    /* scroll-behavior: smooth; */
+}
+
+.ModalContent {
+    width: 95vw;
+    position: relative;
+    background-color: #fff;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.ModalHeader, .ModalFooter {
+    padding: 1vw;
+}
+
+.ModalBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    width: 33.33%;
+}
+
+.Title {
+    max-width: 28.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: 'BIZ UDGothic', sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+    letter-spacing: 0.003vw;
+    color: #4169E1;
+}
+
+.Header {
+    max-width: 28.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 575;
+    font-size: 1.5vw;
+    letter-spacing: -0.055vw;
+    line-height: 2vw;
+    color: #12C396;
+}
+
+.BodyText {
+    max-width: 28.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25vw;
+    line-height: 2.25vw;
+    color: #1D1B26;
+}
+
+
+.TomInsel {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    position: relative;
+    z-index: 1;
+}
+
+.ShrinkTank {
+    display: flex;
+    /* height: fit-content; */
+    flex-direction: column;
+    width: 25vw;
+    position: relative;
+    z-index: 1;
+}
+
+.Pattern1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    right: 2.5vw;
+    height: fit-content;
+    width: 41.1vw;
+    position: absolute;
+    viewport-fit: 0 0 0 0; 
+}
