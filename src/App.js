@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from './App.css';
-import Backdrop from './Components/Backdrop/Backdrop';
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from './/Components/Hero/Hero';
 import History from "./Components/History/History";
@@ -14,7 +13,6 @@ function App() {
     <div className={styles.App}>
             <Navbar/>
             <Hero/>
-            <Backdrop/>
             <History/>
               <button onClick={() => setShow(true) }>
 

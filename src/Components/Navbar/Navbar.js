@@ -3,6 +3,8 @@ import styles from "./Navbar.module.css";
 import EmailIcon from "../../Assets/EmailIcon.png";
 import LinkedInIcon from "../../Assets/LinkedInIcon.png"
 import GithubIcon from "../../Assets/GithubIcon.png";
+import TypeAnimation from 'react-type-animation';
+
 
 class Navbar extends React.Component {
   render() {
@@ -10,7 +12,12 @@ class Navbar extends React.Component {
         <div className={styles.NavContainer}>
 
             <div className={styles.Title}>
-                Hi, I'm Anna
+                <TypeAnimation
+                cursor={false}
+                sequence={["Hi, I'm Anna.", 1000]}
+                wrapper='div'
+                />
+               
             </div>
             <div className={styles.SocialLinks}>
                 <div className={styles.SocialLink}>

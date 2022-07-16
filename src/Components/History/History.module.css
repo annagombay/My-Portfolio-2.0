@@ -1,7 +1,18 @@
-.Wrapper {
+.All {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.BkgSquiggles {
+    display: relative;
     width: 100vw;
-    display: flex;
-    margin-top: -88vw;
+    height: 60vw;
+    object-fit: cover;
+    background-repeat: none;
+    position: static;
+    z-index: 0;
+    margin-top: 52vw;
 }
 
 .Header {
@@ -18,13 +29,12 @@
 }
 
 .HistoryImg {
-    width: 96vw;
-    height: fit-content;
+    width: 95vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
-    margin-top: 83vw;
-    margin-left: 2vw;
+    margin-top: -54vw;
+    margin-left: 2.5vw;
     z-index: 4;
 }

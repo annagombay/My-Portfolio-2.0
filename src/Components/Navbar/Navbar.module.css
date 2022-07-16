@@ -13,6 +13,9 @@
 
 .Title {
     width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* height: fit-content; */
     font-family: 'Cedarville Cursive', cursive;
     font-size: 2.6vw;
     letter-spacing: .02vw;
@@ -26,7 +29,7 @@
 }
 
 .SocialLinks{
-    width: 100vw;
+    width: 30vw;
     height: 6vw;
     display: flex;
     flex-direction: row;

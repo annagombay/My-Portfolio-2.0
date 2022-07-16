@@ -9,8 +9,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     z-index: 6;
+    overflow-y: scroll;
     /* scroll-behavior: smooth; */
 }
 
@@ -23,15 +24,18 @@
     flex-direction: row;
     align-items: flex-start;
     margin: auto;
+    margin-top: 2vw;
 }
 
 .ModalHeader, .ModalFooter {
     padding: 1vw;
+
 }
 
 .ModalBlock {
     display: flex;
     flex-direction: column;
+    margin-bottom: auto;
     padding: 2vw;
     width: 33.33%;
 }
@@ -73,7 +77,6 @@
     color: #1D1B26;
 }
 
-
 .TomInsel {
     display: flex;
     flex-direction: column;
@@ -91,7 +94,30 @@
     z-index: 1;
 }
 
-.Pattern1 {
+.Mockup1 {
+    display: flex;
+    /* height: fit-content; */
+    flex-direction: column;
+    width: 22vw;
+    position: relative;
+    z-index: 1;
+}
+
+.Mockup2 {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 22vw;
+    position: relative;
+    z-index: 1;
+}
+
+#mock {
+    margin-top: 0 auto;
+}
+
+/* .Pattern1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -100,4 +126,4 @@
     width: 41.1vw;
     position: absolute;
     viewport-fit: 0 0 0 0; 
-}
+} */
