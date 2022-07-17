@@ -4,6 +4,7 @@ import ShrinkTank from "./../../Assets/ShrinkTank.png";
 import TomInsel from "./../../Assets/TomInsel.png";
 import Mockup1 from "./../../Assets/Mockup1.png";
 import Mockup2 from "./../../Assets/Mockup2.png";
+import CommunityPosts from "./../../Assets/CommunityPosts.png";
 // import Bkg_Triangles from "./../../Assets/Bkg_Triangles.png";
 // import { CSSTransition } from 'react-transition.group';
 
@@ -15,7 +16,6 @@ class Modal extends React.Component {
         }
         return (
             <div className={styles.Modal} onClick={this.props.onClose}>
-                
                 <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
                     <div className={styles.ModalFooter}>
                         <button onClick={this.props.onClose} className={styles.Button}>
@@ -23,11 +23,8 @@ class Modal extends React.Component {
                         </button>
                     </div> 
                 </div>
-
-                {/* {`Modal ${this.props.show ? 'show' : ''}`} c */}
                 <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
                     <div className={styles.ModalBlock}>
-                    {/* {this.props.block}      */}
                         <div className={styles.Title}>
                             THE PROBLEM
                         </div>
@@ -57,26 +54,22 @@ class Modal extends React.Component {
                 
                 <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
                     <div className={styles.ModalBlock}>
-                    {/* {this.props.block}      */}
                         <div className={styles.Title}>
                             THE SOLUTION
                         </div>
-                        <br></br>
+                            <br></br>
                         <div className={styles.Header}>
-                            An online platform that: 
+                            A reliable measure to capture the relationship between psychiatric medication and daily mood
                         </div>
-                        <br></br>
                         <div className={styles.BodyText}>
-                            1. Measures the relationship between specific psychiatric medications and daily mood
-                        <br></br>
-                        <br></br>
-                            • Captures daily mood dynamically, measuring tone and energy
-                        <br></br>
-                        <br></br>
-                            • Allows users to track medication use
-                        <br></br>
-                        <br></br>
-                            • Displays the relationship between medication intake and daily mood
+                            <br></br>
+                            • A mood scale measuring tone and energy
+                            <br></br>
+                            <br></br>
+                            • A psychiatric medication tracker
+                            <br></br>
+                            <br></br>
+                            • Data to understand relationship between medication and mood
                         </div>
                     </div>
                     <div className={styles.ModalBlock}>
@@ -89,9 +82,38 @@ class Modal extends React.Component {
                             <img src={Mockup2} alt="Mockup2" />
                         </div>
                     </div>
-                </div>   
+                </div>
 
+                <div className={styles.ModalContentHug} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.ModalBlock}>
+                        <div className={styles.Header}>
+                            A safe, crowd-sourced space to connect and learn about mental health 
+                        </div>
+                        <div className={styles.BodyText}>
+                            <br></br>
+                            • Chat forums to discuss mental health
+                            <br></br>
+                            <br></br>
+                            • ...
+                            <br></br>
+                            <br></br>
+                            • ...
+                        </div>
+                    </div>
+                    <div className={styles.ModalBlock}>
+                        
+                        <div className={styles.CommunityPosts}>
+                            <img src={CommunityPosts} alt="CommunityPosts" />
+                        </div>
+                    </div>
+                    <div className={styles.ModalBlock}>
+                        <div className={styles.Mockup2}>
+                            <img src={Mockup2} alt="Mockup2" />
+                        </div>
+                    </div>
+                </div>
             </div>
+
         )
     }
 }
