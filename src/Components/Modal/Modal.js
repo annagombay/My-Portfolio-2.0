@@ -4,7 +4,9 @@ import ShrinkTank from "./../../Assets/ShrinkTank.png";
 import TomInsel from "./../../Assets/TomInsel.png";
 import Mockup1 from "./../../Assets/Mockup1.png";
 import Mockup2 from "./../../Assets/Mockup2.png";
-import CommunityPosts from "./../../Assets/CommunityPosts.png";
+
+import Mockup3 from "./../../Assets/Mockup3.png";
+import Mockup4 from "./../../Assets/Mockup4.png";
 // import Bkg_Triangles from "./../../Assets/Bkg_Triangles.png";
 // import { CSSTransition } from 'react-transition.group';
 
@@ -23,6 +25,7 @@ class Modal extends React.Component {
                         </button>
                     </div> 
                 </div>
+
                 <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
                     <div className={styles.ModalBlock}>
                         <div className={styles.Title}>
@@ -51,67 +54,54 @@ class Modal extends React.Component {
                         </div>
                     </div>
                 </div> 
-                
+
                 <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
                     <div className={styles.ModalBlock}>
                         <div className={styles.Title}>
                             THE SOLUTION
                         </div>
-                            <br></br>
-                        <div className={styles.Header}>
-                            A reliable measure to capture the relationship between psychiatric medication and daily mood
+                        <div className={styles.ModalContent2} onClick= {e => e.stopPropagation()}>
+                            <div className={styles.Header2}>
+                            A dynamic scale to measure the relationship between medication and daily mood
+                            </div> 
+                            <div className={styles.Header3}>
+                                A safe community to connect about mental health 
+                            </div> 
+                            <div className={styles.Header3}>
+                                An educational hub to learn about mental health
+                            </div>
                         </div>
-                        <div className={styles.BodyText}>
-                            <br></br>
-                            • A mood scale measuring tone and energy
-                            <br></br>
-                            <br></br>
-                            • A psychiatric medication tracker
-                            <br></br>
-                            <br></br>
-                            • Data to understand relationship between medication and mood
-                        </div>
-                    </div>
-                    <div className={styles.ModalBlock}>
-                        <div className={styles.Mockup1}>
-                            <img src={Mockup1} alt="Mockup1" />
-                        </div>
-                    </div>
-                    <div className={styles.ModalBlock}>
-                        <div className={styles.Mockup2}>
-                            <img src={Mockup2} alt="Mockup2" />
+                        <div className={styles.ModalContent2} onClick= {e => e.stopPropagation()}>
+                            <div className={styles.Mockup1}>
+                                <img src={Mockup1} alt="Mockup1" />
+                            </div>
+                            <div className={styles.Mockup2}>
+                                <img src={Mockup2} alt="Mockup2" />
+                            </div>
+                            <div className={styles.Mockup3}>
+                                <img src={Mockup3} alt="Mockup3" />
+                            </div>
+                            <div className={styles.Mockup4}>
+                                <img src={Mockup4} alt="Mockup4" />
+                            </div>     
                         </div>
                     </div>
                 </div>
 
-                <div className={styles.ModalContentHug} onClick= {e => e.stopPropagation()}>
-                    <div className={styles.ModalBlock}>
-                        <div className={styles.Header}>
-                            A safe, crowd-sourced space to connect and learn about mental health 
+                <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.ModalBlock2}>
+                        <div className={styles.Title2}>
+                            THE DESIGN PROCESS
                         </div>
-                        <div className={styles.BodyText}>
-                            <br></br>
-                            • Chat forums to discuss mental health
-                            <br></br>
-                            <br></br>
-                            • ...
-                            <br></br>
-                            <br></br>
-                            • ...
+                        <div className={styles.ModalContent3} onClick= {e => e.stopPropagation()}>
+                            
                         </div>
-                    </div>
-                    <div className={styles.ModalBlock}>
-                        
-                        <div className={styles.CommunityPosts}>
-                            <img src={CommunityPosts} alt="CommunityPosts" />
-                        </div>
-                    </div>
-                    <div className={styles.ModalBlock}>
-                        <div className={styles.Mockup2}>
-                            <img src={Mockup2} alt="Mockup2" />
+                        <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
         )
