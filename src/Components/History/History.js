@@ -9,14 +9,10 @@ class History extends React.Component {
         return (
             <div className={styles.All}>
             <img src={BkgSquiggles} alt="BkgSquiggles" className={styles.BkgSquiggles}/>
-            <div>
-            <div className={styles.Header}>
-                My History
+            
+            <div className={styles.ImgWrapper}>
+                <img src={HistoryImg} alt="history" className={styles.HistoryImg}/>
             </div>
-        </div>
-
-            <img src={HistoryImg} alt="history" className={styles.HistoryImg}/>
-
 
         </div>
                 
