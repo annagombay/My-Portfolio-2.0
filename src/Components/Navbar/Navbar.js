@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Navbar.module.css";
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 import EmailIcon from "../../Assets/EmailIcon.png";
 import LinkedInIcon from "../../Assets/LinkedInIcon.png"
 import GithubIcon from "../../Assets/GithubIcon.png";

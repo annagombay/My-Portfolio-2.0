@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import HeroImage from "../../Assets/AliceWoods.png";
+import HeroImage from "../../Assets/AliceWoods.webp";
 
 
 class Hero extends React.Component {

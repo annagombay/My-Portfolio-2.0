@@ -4,8 +4,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import Hero from './/Components/Hero/Hero';
 import History from "./Components/History/History";
 import Modal from "./Components/Modal/Modal";
-import TypeAnimation from 'react-type-animation';
-import { useInView } from 'react-intersection-observer';
+// import TypeAnimation from 'react-type-animation';
+// import { useInView } from 'react-intersection-observer';
 
 function App() {
   const [show, setShow] = useState(false)

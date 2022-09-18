@@ -1,0 +1,17 @@
+.Bkg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    width: 100vw;
+    height: 25vw;
+    background-image: url(./../../Assets/BkgPaper.webp);
+    object-fit: cover;
+    border-top: .30vw solid #C2EDF4;
+    /* box-shadow: 1px 1px 2px 0 #158192, */
+    /* -1px -1px 2px 0 #84e0ee; */
+  }
+
+button {
+    cursor: pointer;
+  }

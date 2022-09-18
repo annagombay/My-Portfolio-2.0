@@ -1,13 +1,23 @@
 import React from 'react'
 import styles from "./Modal.module.css";
-import ShrinkTank from "./../../Assets/ShrinkTank.png";
-import TomInsel from "./../../Assets/TomInsel.png";
-import Mockup1 from "./../../Assets/Mockup1.png";
-import Mockup2 from "./../../Assets/Mockup2.png";
+import Bunny from "./../../Assets/Bunny.webp";
+import ShrinkTank from "./../../Assets/ShrinkTank.webp";
+import Mockup1 from "./../../Assets/Mockup1.webp";
+import Mockup2 from "./../../Assets/Mockup2.webp";
+import Mockup3 from "./../../Assets/Mockup3.webp";
+import Mockup4 from "./../../Assets/Mockup4.webp";
+import AffinityMap from "./../../Assets/AffinityMap.webp";
+import Interviews from "./../../Assets/Interviews.webp";
+import Persona1 from "./../../Assets/Persona1.webp";
+import Persona2 from "./../../Assets/Persona2.webp";
+import Persona3 from "./../../Assets/Persona3.webp";
+import CompAn from "./../../Assets/CompAn.webp";
+import Sketches from "./../../Assets/Sketches.webp";
+import Feature1 from "./../../Assets/Feature1.png";
+import Feature2 from "./../../Assets/Feature2.png";
+import Feature3 from "./../../Assets/Feature3.webp";
+import Lofi from "./../../Assets/Lofi.svg";
 
-import Mockup3 from "./../../Assets/Mockup3.png";
-import Mockup4 from "./../../Assets/Mockup4.png";
-// import Bkg_Triangles from "./../../Assets/Bkg_Triangles.png";
 // import { CSSTransition } from 'react-transition.group';
 
 
@@ -17,95 +27,376 @@ class Modal extends React.Component {
             return null
         }
         return (
-            <div className={styles.Modal} onClick={this.props.onClose}>
-                <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
-                    <div className={styles.ModalFooter}>
-                        <button onClick={this.props.onClose} className={styles.Button}>
-                            Close
-                        </button>
+            <div className={styles.CaseStudy} onClick={this.props.onClose}>
+                <div className={styles.HeroBkg}>
+                </div>
+                <div className={styles.Sticky}>
+                    <div className={styles.Close} onClick={this.props.onClose} >
+                        <img className={styles.Bunny} src={Bunny} alt='Bunny'/>
+                    </div>
+                </div>
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.Brief} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.Title}>
+                            OKNOTOK
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.ValueProp} onClick= {e => e.stopPropagation()}>
+                        The app that does x to help you do y.  
                     </div> 
                 </div>
-
-                <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
-                    <div className={styles.ModalBlock}>
-                        <div className={styles.Title}>
-                            THE PROBLEM
-                        </div>
-                        <br></br>
-                        <div className={styles.Header}>
-                            The impact of psychiatric medication on the human brain is inadequately measured and narrowly understood. 
-                        </div>
-                        <br></br>
-                        <div className={styles.BodyText}>
-                            Psychiatry relies on a diagnostic system rooted in observational research, genetic evidence lacking significant advances since the 1950s, and drug treatment models that do not align with the diagnoses they intend to treat.
-                        <br></br>
-                        <br></br>
-                            A system needs to be put in place to rigorously analyze how psychiatric drugs impact people on a day-to-day level to reduce patient harm and increase treatment efficacy.
-                        </div>
-                    </div>
-                    <div className={styles.ModalBlock}>
-                        <div className={styles.TomInsel}>
-                            <img src={TomInsel} alt="TomInsel" />
-                        </div>
-                    </div>
-                    <div className={styles.ModalBlock}>
-                        <div className={styles.ShrinkTank}>
-                            <img src={ShrinkTank} alt="ShrinkTank" />
-                        </div>
-                    </div>
-                </div> 
-
-                <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
-                    <div className={styles.ModalBlock}>
-                        <div className={styles.Title}>
-                            THE SOLUTION
-                        </div>
-                        <div className={styles.ModalContent2} onClick= {e => e.stopPropagation()}>
-                            <div className={styles.Header2}>
-                            A dynamic scale to measure the relationship between medication and daily mood
-                            </div> 
-                            <div className={styles.Header3}>
-                                A safe community to connect about mental health 
-                            </div> 
-                            <div className={styles.Header3}>
-                                An educational hub to learn about mental health
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.Hero} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.MockupKno}>
+                                    <img src={Mockup4} alt="Mockup4" />
+                                </div>
                             </div>
                         </div>
-                        <div className={styles.ModalContent2} onClick= {e => e.stopPropagation()}>
-                            <div className={styles.Mockup1}>
-                                <img src={Mockup1} alt="Mockup1" />
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.MockupMood}>
+                                    <img src={Mockup1} alt="Mockup1" />
+                                </div>
                             </div>
-                            <div className={styles.Mockup2}>
-                                <img src={Mockup2} alt="Mockup2" />
+                        </div>
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.MockupMed}>
+                                    <img src={Mockup2} alt="Mockup2" />
+                                </div>
                             </div>
-                            <div className={styles.Mockup3}>
-                                <img src={Mockup3} alt="Mockup3" />
+                        </div>
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.MockupCom}>
+                                    <img src={Mockup3} alt="Mockup3" />
+                                </div>
                             </div>
-                            <div className={styles.Mockup4}>
-                                <img src={Mockup4} alt="Mockup4" />
-                            </div>     
+                        </div>
+                    </div> 
+                </div>  
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.BriefBkg}>
+                        <div className={styles.Squeeze}>
+                            <div className={styles.Square}>
+                                <div className={styles.SubTitle2}>
+                                    Brief   
+                                </div>
+                                <div className={styles.Body2}>
+                                    A mobile app to measure the relationship between psychiatric medication use and mood
+                                </div>
+                            </div>
+                            <div className={styles.Square}>
+                                <div className={styles.SubTitle2}>
+                                    Goal   
+                                </div>
+                                <div className={styles.Body2}>
+                                    To reduce risk of harm and support the mental health of psychiatric medication users
+                                </div>
+                            </div>
+                            <div className={styles.Square}>
+                                <div className={styles.SubTitle2}>
+                                    Roles   
+                                </div>
+                                <div className={styles.Body2}>
+                                    UX Researcher
+                                        <br></br>
+                                    UX Designer
+                                        <br></br>
+                                    ReactJS Developer 
+                                </div>
+                            </div>
+                            <div className={styles.Square}>
+                                <div className={styles.SubTitle2}>
+                                    Tools   
+                                </div>
+                                <div className={styles.Body2}>
+                                    Figma
+                                        <br></br>
+                                    Visual Studio Code 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
-                    <div className={styles.ModalBlock2}>
-                        <div className={styles.Title2}>
-                            THE DESIGN PROCESS
-                        </div>
-                        <div className={styles.ModalContent3} onClick= {e => e.stopPropagation()}>
-                            
-                        </div>
-                        <div className={styles.ModalContent} onClick= {e => e.stopPropagation()}>
+                <div className={styles.Nudge}>
+                    <div className={styles.MidBkg}>
+                    </div>
+                    <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.Card} onClick= {e => e.stopPropagation()} id="green">
+                            <div className={styles.WrapperCol}>
+                                <div className={styles.Center}>
+                                    <div className={styles.SubTitle}>
+                                        THE PROBLEM
+                                    </div>
+                                    <div className={styles.Header}>
+                                        The impact of psychiatric medication on the human brain is inadequately measured and narrowly understood. 
+                                    </div>
+                                        <br></br>
+                                    <div className={styles.Body}>
+                                        The system used to diagnose mental health disorders is rooted in observational research that has yet to be genetically validated despite 70 years of research. 
+                                            <br></br>
+                                            <br></br>
+                                        In 2013, Tom Insel–Director of NIHM, the largest mental health research organization in the world–urged that “we cannot design a system based on biomarkers or cognitive performance because we lack the data". 
+                                            <br></br>
+                                            <br></br>
+                                        It's 2022; Tom Insel left NIHM for Google, and psychiatrists are still using the same "gold standard" system to determine treatment outcomes for those deemed mentally ill. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div className={styles.Card2} onClick= {e => e.stopPropagation()}>
+                            <div className={styles.ImgWrapper}>
+                                <div className={styles.ShrinkTank}>
+                                    <img src={ShrinkTank} alt="ShrinkTank"/>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.Card} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.SubTitle}>
+                                    DESIGNING A SOLUTION
+                                </div>
+                                <div className={styles.Header}>
+                                    Talking to psychiatric medication users  
+                                </div>
+                                    <br></br>
+                                <div className={styles.Body}>
+                                    To establish an understanding of my prospective users, I conducted five one-on-one interviews with people who had taken psychiatric meds daily for at least 6 months. 
+                                        <br></br> 
+                                        <br></br>
+                                     Conversations revolved around mood, symptoms, and self-reported experiences of medication use. My goal here was to learn about the daily experiences of those taking psychiatric medication, and to begin forming an understanding of the problems they encounter. 
+                                    <br></br> 
+                                    <br></br>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div className={styles.Card2} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.ImgWrapper}>
+                            <div className={styles.ShrinkTank}>
+                                <img src={Interviews} alt="Interviews"/>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.Card} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.Header}>
+                                    Considering wants and needs 
+                                </div>
+                                    <br></br>
+                                <div className={styles.Body}>
+                                    To discern themes in interview feedback, I collapsed my notes and divided them into clusters of reported wants, needs, pains, and opportunities.
+                                        <br></br>
+                                        <br></br>
+                                    I then merged my data into hypothetical personas who represent various experiences those taking psychiatric medication might face.
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div className={styles.Card2} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.ImgWrapper}>
+                            <div className={styles.PersonaWrapper}>
+                                <div className={styles.Persona}>
+                                    <div className={styles.PersonaText}>
+                                        "I want to know if my medication is impacting my mood day-to-day. Is it helping?" 
+                                    </div>
+                                    <div className={styles.PersonaImg}>
+                                        <img src={Persona1} alt="Persona1"/>
+                                    </div>
+                                </div>
+                                <div className={styles.Persona}>
+                                    <div className={styles.PersonaText}>
+                                        "I feel isolated in my environment. I want to connect with people who face mental health challenges similar to my own."  
+                                    </div>
+                                    <div className={styles.PersonaImg}>
+                                        <img src={Persona2} alt="Persona2"/>
+                                    </div>
+                                </div>
+                                <div className={styles.Persona}>
+                                    <div className={styles.PersonaText}>
+                                        "I need to undestand my diagnosis better. Are there alternatives to medication that could help me?"
+                                    </div>
+                                    <div className={styles.PersonaImg}>
+                                        <img src={Persona3} alt="Persona3"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.Card} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.Header}>
+                                    Mapping out problems and solutions 
+                                </div>
+                                    <br></br>
+                                <div className={styles.Body}>
+                                    To broaden the scope from which I could brainstorm design themes, I created an exhaustive list of user-relevant problems, ideas, quotes, emotions, thoughts, and potential solutions. 
+                                        <br></br>
+                                        <br></br>
+                                     I considered any information that could help me comprehensively understand the realities of different types of psychiatric medication users valuable.
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div className={styles.Card2} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.ImgWrapper}>
+                            <div className={styles.ShrinkTank}>
+                                <img src={AffinityMap} alt="AffinityMap"/>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.Card} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.Header}>
+                                    Analyzing competitors 
+                                </div>
+                                    <br></br>
+                                <div className={styles.Body}>
+                                    To understand my competitive landscape, I analyzed existing mobile apps with missions similar to my own. The most significant drawback I identified was that all of my competitor's mood scales categorized mood from "very good" to "very bad", but did not capture the intensity of a given "positive" or "negative" mood.
+                                        <br></br>
+                                        <br></br>
+                                    This method feels limited because a) it risks an implication that "high" moods are categorically good, and "low" moods are categorically bad, and b) it fails to capture the underlying current of energy projecting a given mood. To encourage a perspective that moods are dynamic, and all valuable for different reasons, I decided to include a second dimension in my mood scale that would measure mood intensity,  as well as avoid language that assigns value to mood. 
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div className={styles.Card2} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.ImgWrapper}>
+                            <div className={styles.ShrinkTank}>
+                                <img src={CompAn} alt="CompAn"/>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.Card} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.Header}>
+                                    Sketching the prototype 
+                                </div>
+                                    <br></br>
+                                <div className={styles.Body}>
+                                    Once I had decided on the general features to integrate into my product, I created rough sketches of the prototype. The most important thing I recognized throughout my user research was that individuals taking psychiatric medication should not be acknowledged purely based on their illnesses. 
+                                        <br></br>
+                                        <br></br>
+                                        It felt crucial to build a dynamic environment that promoted a "whole person approach" to mental health support. To this end, in addition to providing users with data surrounding the impact (or lack thereof) of medication on daily well-being, I wanted to foster an online community for likeminded people to connect, as well as provide a knowledge base to support psycho-education. 
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div className={styles.Card2} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.ImgWrapper}>
+                            <div className={styles.Sketches}>
+                                <img src={Sketches} alt="Sketches" />
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.Card} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.WrapperCol}>
+                            <div className={styles.Center}>
+                                <div className={styles.Header}>
+                                    Digitizing the design                             
+                                </div>
+                                    <br></br>
+                                <div className={styles.Body}>
+                                    Iterating from my sketches, I digitized my design. 
+                                    
+                                    I assembled a comprehensive list of features and functions that would be necessary to implement in my code.  
+                                </div>   
+                            </div>
+                        </div>
+                    </div> 
+                    <div className={styles.Card2} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.ImgWrapper}>
+                            <div className={styles.ShrinkTank}>
+                                <img src={Lofi} alt="Lofi" />
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                        <div className={styles.Card3} onClick= {e => e.stopPropagation()} id="green">
+                            <div className={styles.WrapperCol}>
+                                <div className={styles.Center}>
+                                    <div className={styles.SubTitle3}>
+                                        THE FINAL PRODUCT
+                                    </div>
+                                        <br></br>
+                                    <div className={styles.Header2}>
+                                        An app that alows users to...
+                                        <br></br>
+                                        <br></br>
+                                        dynamically measure medication use and mood 
+                                    </div>
+                                        <br></br>
+                                        <br></br>
+                                    <img className={styles.Feature} alt="Feature1" src={Feature1}/>
+                                        <br></br>
+                                        <br></br>
+                                    <div className={styles.Header2}>
+                                        Connect anonymously with a safe community
+                                    </div>
+                                        <br></br>
+                                        <br></br>
+                                    <img className={styles.Feature} alt="Feature2" src={Feature2}/>
+                                        <br></br>
+                                        <br></br>
+                                    <div className={styles.Header2}>
+                                        Access educational content on mental health 
+                                    </div>
+                                        <br></br>
+                                        <br></br>
+                                    <img className={styles.Feature} alt="Feature3" src={Feature3}/>
+                                        <br></br>
+                                        <br></br>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
+                    <div className={styles.BriefBkg}>
+                            <div className={styles.Footer}>
+                                <div className={styles.SubTitle2}>
+                                    NEXT STEPS   
+                                </div>
+                                <div className={styles.Body2}>
+                                    I'm currently in the process of developing OKNOTOK using a ReactJS framework. The release date is set for 2023. 
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div>
-
         )
     }
 }
 
+
 export default Modal; 
+
+
+
+
+
