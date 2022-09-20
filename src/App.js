@@ -3,17 +3,15 @@ import styles from './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from './/Components/Hero/Hero';
 import History from "./Components/History/History";
-// import Modal from "./Components/Modal/Modal";
 import Projects from "./Components/Projects/Projects";
+// import { useMediaQuery } from 'react-responsive'
 // import TypeAnimation from 'react-type-animation';
 // import { useInView } from 'react-intersection-observer';
 
 function App() {
   // const [show, setShow] = useState(false)
   // const { ref: myRef, inView: myElementIsVisible }= useInView();
-
   //  { myElementIsVisible ?  'yes' : 'No'}
-    
 
   return (
     
