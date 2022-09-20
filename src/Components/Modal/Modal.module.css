@@ -121,7 +121,6 @@
     width: 80vw;
     height: fit-content;
     position: relative;
-    /* background-color: white; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -202,12 +201,10 @@
 }
 
 .Lofi {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 14vw;
+    width: 32vw;
     height: fit-content;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -236,12 +233,10 @@
     justify-content: flex-start;
     text-align: start;
     width: 100vw;
-    height: 25vw;
+    height: fit-content;
     background-image: url(./../../Assets/BkgPaper.webp);
     object-fit: cover;
     border-top: .30vw solid #C2EDF4;
-    /* box-shadow: 1px 1px 2px 0 #158192, */
-    /* -1px -1px 2px 0 #84e0ee; */
 
 }
 
@@ -286,7 +281,7 @@
     line-height: 3.9843749999999996vw;
     color: #24AFC5;
     text-transform: uppercase;
-    margin-top: 2vw;
+    margin-top: 1vw;
 }
 
 .SubTitle3 {
@@ -340,7 +335,8 @@
 }
 
 .Body2 {
-    display: flex;
+    display: inline;
+    max-width: 37vw;
     flex-direction: row;
     justify-content: center;
     text-align: center;
@@ -352,10 +348,16 @@
     letter-spacing: 0.0390625vw;
     line-height: 1.875vw;
     color: #1D1B26;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
 }
 
 .Footer {
     padding: 1vw;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .Personas {
@@ -405,10 +407,10 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    width: 17vw;
+    width: 15vw;
     position: relative;
     z-index: 1;
-    margin-left: -2vw;
+    margin-left: -1vw;
     margin-top: 2vw;
 }
 
@@ -419,7 +421,7 @@
     width: 15.8vw;
     position: relative;
     z-index: 1;
-    margin-left: .2vw;
+    margin-left: 1.2vw;
     margin-top: 2.7vw;
 }
 
@@ -467,6 +469,7 @@
     margin-top: 2vw;
     z-index: 5;
     top: -1vw;
+    cursor: pointer;
 }  
 
 .Close {
@@ -491,7 +494,7 @@
 
 .BriefBkg {
     width: 100vw;
-    height: 17vw;
+    height: fit-content;
     background-image: url(./../../Assets/MidBkg.webp);
     z-index: 0;
     position: absolute;
@@ -500,25 +503,33 @@
     background-repeat: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 575;
-    font-size: 1.5vw;
-    letter-spacing: -0.055vw;
-    line-height: 2vw;
-    color: #24AFC5;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
     margin-top: 1vw;
+    padding-bottom: 2vw;
     z-index: 2;
+    justify-content: center;
+}
+
+.BriefBkg2 {
+    width: 100vw;
+    height: fit-content;
+    background-image: url(./../../Assets/BkgPaper.webp);
+    z-index: 0;
+    position: absolute;
+    background-size:cover;
+    object-fit: fill;
+    background-repeat: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vw;
+    padding-bottom: 2vw;
+    z-index: 2;
+    justify-content: center;
 
 }
 
 .MidBkg {
     width: 100vw;
-    height: 490vw;
+    height: 510vw;
     background-image: url(./../../Assets/MidBkg.webp);
     z-index: 0;
     position: absolute;
@@ -551,7 +562,7 @@
 }
 
 .Nudge {
-    margin-top: 21vw;
+    margin-top: 20vw;
 }
 
 .Squeeze {
@@ -582,4 +593,39 @@
 
 .br {
     height: 1.875vw;
+}
+
+.Signature {
+    width: 10vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    margin-left: .3vw;
+
+}
+
+.Span {
+    display: inline;
+}
+
+.NextSteps {
+    position: absolute;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 10vw;
+}
+
+.Paws {
+    width: 50vw;
+    height: fit-content;
+    position: relative;
+    z-index: 0;
+    opacity: 10%;
 }

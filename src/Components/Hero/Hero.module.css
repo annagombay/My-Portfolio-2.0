@@ -66,10 +66,11 @@
     height: fit-content;
     padding: 1vw;
     font-family: "BIZ UDPGothic"; 
-    font-size: 1.09vw;
-    letter-spacing: 0.09vw;
-    font-weight: medium;
-    color: white;
+    font-size: 1.09375vw;
+    letter-spacing: 0.09765625vw;
+    line-height: 1.640625vw;
+    font-weight: bold;
+    color: #FFFBF7;
     background-color: #f16a8d;
     border: .1vw solid #fcdfe7;
     border-radius: .8vw;
@@ -84,5 +85,5 @@
     background-color: #fcdfe7;
     color: #F16A8D;
     font-weight: bold;
-    
+    border: .1vw solid #F16A8D;
 }

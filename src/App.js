@@ -3,12 +3,13 @@ import styles from './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from './/Components/Hero/Hero';
 import History from "./Components/History/History";
-import Modal from "./Components/Modal/Modal";
+// import Modal from "./Components/Modal/Modal";
+import Projects from "./Components/Projects/Projects";
 // import TypeAnimation from 'react-type-animation';
 // import { useInView } from 'react-intersection-observer';
 
 function App() {
-  const [show, setShow] = useState(false)
+  // const [show, setShow] = useState(false)
   // const { ref: myRef, inView: myElementIsVisible }= useInView();
 
   //  { myElementIsVisible ?  'yes' : 'No'}
@@ -20,10 +21,7 @@ function App() {
             <Navbar/>
             <Hero/>
             <History/>
-              <button onClick={() => setShow(true) }>
-                Show Modal
-              </button>
-            <Modal onClose={ () => setShow(false)} show={show}/>
+            <Projects/>
     </div>   
   )
 }

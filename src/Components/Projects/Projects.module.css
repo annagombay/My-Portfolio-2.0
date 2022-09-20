@@ -1,17 +1,149 @@
-.Bkg {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    width: 100vw;
-    height: 25vw;
-    background-image: url(./../../Assets/BkgPaper.webp);
-    object-fit: cover;
-    border-top: .30vw solid #C2EDF4;
-    /* box-shadow: 1px 1px 2px 0 #158192, */
-    /* -1px -1px 2px 0 #84e0ee; */
-  }
+.All {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-button {
-    cursor: pointer;
-  }
+.BkgSquiggles {
+  display: relative;
+  width: 100vw;
+  height: 52vw;
+  object-fit: cover;
+  background-repeat: none;
+  position: static;
+  z-index: 0;
+}
+
+.ProjectWrapper {
+  display: relative;
+  position: absolute;
+  width: 100vw;
+  height: 50vw;
+  object-fit: cover;
+  background-repeat: none;
+  position: static;
+  z-index: 0;
+  margin-top: -52vw;
+}
+
+.Square {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+  width: 24vw;
+  height: 35.5vw;
+  background-image: url(./../../Assets/BkgPaper.webp);
+  object-fit: cover;
+  border: .3vw solid #C2EDF4;
+  border-radius: 3vw;
+  position: relative;
+  z-index: 3;
+  margin-left: 4.7vw;
+}
+
+.WrapperCol {
+  display: flex;
+  flex-direction: column;
+  width: 24vw;
+}
+
+.WrapperRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 24vw;
+}
+
+.Wrap {
+  display: flex;
+  flex-direction: row;
+  width: 24vw;
+  justify-content: center;
+  margin-left: 4.7vw;
+}
+
+.Button {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 1vw;
+  font-family: "BIZ UDPGothic"; 
+  font-size: 1.09375vw;
+  letter-spacing: 0.09765625vw;
+  line-height: 1.640625vw;
+  font-weight: bold;
+  color: #FFFBF7;
+  background-color: #f16a8d;
+  border: .1vw solid #fcdfe7;
+  border-radius: .8vw;
+  z-index: 3;
+  box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1vw;
+} 
+
+.Button:hover {
+  background-color: #fcdfe7;
+  color: #F16A8D;
+  font-weight: bold;
+  border: .1vw solid #F16A8D;
+
+}
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Cedarville Cursive';
+    font-size: 2.6vw;
+    letter-spacing: .02vw;
+    color: black;
+    position: relative;
+    z-index: 5;
+    margin-left: 5vw;
+    z-index: 1;
+    margin-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.ImgWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 22vw;
+  padding: 1vw;
+  justify-content: space-around;
+}
+
+.Promo {
+  width: 21vw;
+}
+
+.Title {
+  font-weight: 900;
+  font-size: 2.65625vw;
+  letter-spacing: 0.01953125vw;
+  line-height: 3.9843749999999996vw;
+  display: flex;
+  flex-direction: row;
+  color: #1D1B26;
+}
+
+.Body {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25vw;
+  letter-spacing: 0.0390625vw;
+  line-height: 1.875vw;
+  color: #1D1B26;
+}
+
+span {
+  font-weight: bold;
+  position: inline;
+}
