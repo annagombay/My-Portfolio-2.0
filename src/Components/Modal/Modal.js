@@ -19,7 +19,6 @@ import Feature3 from "./../../Assets/Feature3.webp";
 import Lofi from "./../../Assets/Lofi.webp";
 import Signature from "./../../Assets/Signature.webp";
 import NextSteps from "./../../Assets/nextSteps.svg";
-
 // import { CSSTransition } from 'react-transition.group';
 
 class Modal extends React.Component {
@@ -299,7 +298,7 @@ class Modal extends React.Component {
                                     Once I had determined the fundamental features to be included in the app, I created rough sketches of the prototype. The most important thing I recognized throughout my user research was that individuals taking psychiatric medication should not be acknowledged purely based on their illnesses. 
                                         <br></br>
                                         <br></br>
-                                        It felt crucial to build a dynamic environment that promoted a "whole person approach" to mental health support. To this end, in addition to providing users with data surrounding the impact (or lack thereof) of medication on daily well-being, I wanted to foster an online community for likeminded people to connect, as well as provide a knowledge base to support psycho-education. 
+                                    It felt crucial to build a dynamic environment that promoted a "whole person approach" to mental health support. To this end, in addition to providing users with data surrounding the impact (or lack thereof) of medication on daily well-being, I wanted to foster an online community for likeminded people to connect, as well as provide a knowledge base to support psycho-education. 
                                 </div>
                             </div>
                         </div>
@@ -405,17 +404,11 @@ class Modal extends React.Component {
                                 </div>
                                 <img className={styles.Signature} src={Signature} alt='Signature'/>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        )
+            )
+        }
     }
-}
-
 
 export default Modal; 
-
-
-
-
-

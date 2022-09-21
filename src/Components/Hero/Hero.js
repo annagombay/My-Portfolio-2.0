@@ -2,12 +2,9 @@ import React from "react";
 import styles from "./Hero.module.css";
 import HeroImage from "../../Assets/AliceWoods.webp";
 
-
 class Hero extends React.Component {
     render() {
         return (
-
-
                 <div className = {styles.Hero}>
                     <img src={HeroImage} alt="heroImage" className={styles.HeroImage}/>
                     <div className={styles.HeroBody}>
@@ -25,10 +22,8 @@ class Hero extends React.Component {
                         SEE MY PROJECTS
                     </div>
                 </div>
-
-                
-        )
+            )
+        }
     }
-}
 
 export default Hero; 

@@ -6,9 +6,8 @@ import Promo from "../../Assets/Promo.webp";
 
 function Projects() {
     const [show, setShow] = useState(false)
-
+    
     return (
-
         <div className={styles.All}>
             <img src={BkgSquiggles} alt="BkgSquiggles" className={styles.BkgSquiggles}/>
                 <div className={styles.ProjectWrapper}>
@@ -40,7 +39,7 @@ function Projects() {
                     <Modal onClose={ () => setShow(false)} show={show}/>
                 </div>
             </div>
-    )          
-  }
+        )          
+    }
 
 export default Projects;

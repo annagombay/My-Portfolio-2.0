@@ -6,7 +6,6 @@ import LinkedInIcon from "../../Assets/LinkedInIcon.png"
 import GithubIcon from "../../Assets/GithubIcon.png";
 import TypeAnimation from 'react-type-animation';
 
-
 function Navbar() {
     return (
         <div className={styles.NavContainer}>
