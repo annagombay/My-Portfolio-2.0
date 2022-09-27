@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  margin-top: -5vw;
 }
 
 .BkgSquiggles {
   display: relative;
   width: 100vw;
-  height: 52vw;
+  height: fit-content;
   object-fit: cover;
   background-repeat: none;
   position: static;
@@ -61,6 +62,7 @@
   width: 24vw;
   justify-content: center;
   margin-left: 4.7vw;
+  
 }
 
 .Button {
@@ -69,7 +71,8 @@
   width: fit-content;
   height: fit-content;
   padding: 1vw;
-  font-family: "BIZ UDPGothic"; 
+  font-family: 'BIZ UDGothic', sans-serif;
+  font-weight: 400; 
   font-size: 1.09375vw;
   letter-spacing: 0.09765625vw;
   line-height: 1.640625vw;
@@ -82,13 +85,53 @@
   box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
   text-transform: uppercase;
+  margin-top: -5vw;
+  cursor: pointer;
+  
+} 
+
+
+.Button {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 1vw;
+  font-family: 'BIZ UDPGothic', sans-serif;
+  font-weight: 900; 
+  font-size: 1.09375vw;
+  letter-spacing: 0.09765625vw;
+  line-height: 1.640625vw;
+  color: #FFFBF7;
+  background-color: #f16a8d;
+  border: .1vw solid #fcdfe7;
+  border-radius: .8vw;
+  margin-left: 0vw;
   margin-top: 1vw;
+  z-index: 3;
+  box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
 } 
 
 .Button:hover {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 1vw;
+  font-family: 'BIZ UDPGothic', sans-serif;
+  font-weight: 900; 
+  font-size: 1.09375vw;
+  letter-spacing: 0.09765625vw;
+  line-height: 1.640625vw;
+  border-radius: .8vw;
+  margin-left: 0vw;
+  margin-top: 1vw;
+  z-index: 3;
+  box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
   background-color: #fcdfe7;
   color: #F16A8D;
-  font-weight: bold;
   border: .1vw solid #F16A8D;
 
 }
@@ -105,7 +148,7 @@
     margin-left: 5vw;
     z-index: 1;
     margin-top: 2vw;
-    padding-bottom: 2vw;
+    padding-top: 3vw;
 }
 
 .ImgWrapper {
@@ -147,3 +190,422 @@ span {
   font-weight: bold;
   position: inline;
 }
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+
+/* PHONES */
+@media (max-width: 576px) {
+      
+  .Header {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Cedarville Cursive';
+    font-size: 10.4vw;
+    letter-spacing: .02vw;
+    color: black;
+    position: relative;
+    z-index: 5;
+    margin-left: 5vw;
+    margin-top: -499vw;
+  }
+
+  .All {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+
+  .BkgSquiggles {
+    display: relative;
+    width: 100vw;
+    height: 500vw;
+    object-fit: cover;
+    background-repeat: none;
+    position: relative;
+    z-index: 0;
+  }
+
+  /* .BkgSquiggles {
+    display: relative;
+    width: 100vw;
+    height: fit-content;
+    object-fit: cover;
+    background-repeat: none;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+} */
+
+  .ProjectWrapper {
+    display: relative;
+    position: absolute;
+    width: 100vw;
+    height: fit-content;
+    object-fit: cover;
+    background-repeat: none;
+    position: static;
+    z-index: 0;
+    /* margin-top: -52vw; */
+    justify-content: center;
+    
+  }
+
+  .Square {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    width: 90vw;
+    height: fit-content;
+    background-image: url(./../../Assets/BkgPaper.webp);
+    object-fit: cover;
+    border: .7vw solid #C2EDF4;
+    border-radius: 3vw;
+    position: relative;
+    z-index: 3;
+    margin-left: 5vw;
+  }
+
+  .WrapperCol {
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+    padding-bottom: 6vw;
+  }
+
+  .WrapperRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90vw;
+
+  }
+
+  .Wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0vw;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .Button {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 70vw;
+    height: fit-content;
+    padding: 5vw;
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-weight: bold; 
+    font-size: 4.375vw;
+    letter-spacing: 0.390625vw;
+    line-height: 6.5625vw;
+    color: #FFFBF7;
+    background-color: #f16a8d;
+    border: .4vw solid #fcdfe7;
+    border-radius: 3vw;
+    z-index: 3;
+    box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    margin-top: 3vw;
+    justify-content: center;
+    margin-left: 0vw;
+  } 
+
+  .Button:hover {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 70vw;
+    height: fit-content;
+    padding: 5vw;
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-weight: bold; 
+    font-size: 4.375vw;
+    letter-spacing: 0.390625vw;
+    line-height: 6.5625vw;
+    cursor: pointer;
+
+
+
+
+    border-radius: 3vw;
+    z-index: 3;
+    box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    margin-top: 3vw;
+    justify-content: center;
+    margin-left: 0vw;
+
+    background-color: #fcdfe7;
+    color: #F16A8D;
+
+    border: .4vw solid #F16A8D;
+
+  }
+
+  .ImgWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    padding: 1vw;
+    justify-content: center;
+  }
+
+  .Promo {
+    width: 80vw;
+    margin-right: 5vw;
+    margin-top: 3vw;
+
+  }
+
+  .Title {
+    font-weight: 900;
+    font-size: 10.625vw;
+    letter-spacing: 0.078125vw;
+    line-height: 15.9375vw;
+    display: flex;
+    flex-direction: row;
+    color: #1D1B26;
+  }
+
+  .Body {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vw;
+    letter-spacing: 0.12625vw;
+    line-height: 7.5vw;
+    color: #1D1B26;
+    padding-bottom: 4vw;
+  }
+
+  span {
+    font-weight: bold;
+    position: inline;
+  }
+
+  
+  }
+  
+  /* TABLETS */
+  @media (max-width: 768px) { 
+    .Header {
+      display: flex;
+      flex-direction: row;
+      font-family: 'Cedarville Cursive';
+      font-size: 10.4vw;
+      letter-spacing: .02vw;
+      color: black;
+      position: relative;
+      z-index: 5;
+      margin-left: 5vw;
+      margin-top: -499vw;
+    }
+  
+    .All {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      
+    }
+  
+    .BkgSquiggles {
+      display: relative;
+      width: 100vw;
+      height: 500vw;
+      object-fit: cover;
+      background-repeat: none;
+      position: relative;
+      z-index: 0;
+    }
+  
+    /* .BkgSquiggles {
+      display: relative;
+      width: 100vw;
+      height: fit-content;
+      object-fit: cover;
+      background-repeat: none;
+      position: absolute;
+      object-fit: cover;
+      z-index: 0;
+  } */
+  
+    .ProjectWrapper {
+      display: relative;
+      position: absolute;
+      width: 100vw;
+      height: fit-content;
+      object-fit: cover;
+      background-repeat: none;
+      position: static;
+      z-index: 0;
+      /* margin-top: -52vw; */
+      justify-content: center;
+      
+    }
+  
+    .Square {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: start;
+      width: 90vw;
+      height: fit-content;
+      background-image: url(./../../Assets/BkgPaper.webp);
+      object-fit: cover;
+      border: .7vw solid #C2EDF4;
+      border-radius: 3vw;
+      position: relative;
+      z-index: 3;
+      margin-left: 5vw;
+    }
+  
+    .WrapperCol {
+      display: flex;
+      flex-direction: column;
+      /* width: 100vw; */
+      padding-bottom: 6vw;
+    }
+  
+    .WrapperRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 90vw;
+  
+    }
+  
+    .Wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 0vw;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+    .Button {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 70vw;
+      height: fit-content;
+      padding: 5vw;
+      font-family: 'BIZ UDPGothic', sans-serif;
+      font-weight: bold; 
+      font-size: 4.375vw;
+      letter-spacing: 0.390625vw;
+      line-height: 6.5625vw;
+      color: #FFFBF7;
+      background-color: #f16a8d;
+      border: .4vw solid #fcdfe7;
+      border-radius: 3vw;
+      z-index: 3;
+      box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
+      cursor: pointer;
+      margin-top: 3vw;
+      justify-content: center;
+      margin-left: 0vw;
+    } 
+  
+    .Button:hover {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 70vw;
+      height: fit-content;
+      padding: 5vw;
+      font-family: 'BIZ UDPGothic', sans-serif;
+      font-weight: bold; 
+      font-size: 4.375vw;
+      letter-spacing: 0.390625vw;
+      line-height: 6.5625vw;
+      cursor: pointer;
+  
+  
+  
+  
+      border-radius: 3vw;
+      z-index: 3;
+      box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
+      cursor: pointer;
+      margin-top: 3vw;
+      justify-content: center;
+      margin-left: 0vw;
+  
+      background-color: #fcdfe7;
+      color: #F16A8D;
+  
+      border: .4vw solid #F16A8D;
+  
+    }
+  
+    .ImgWrapper {
+      display: flex;
+      flex-direction: row;
+      width: 95vw;
+      padding: 1vw;
+      justify-content: center;
+    }
+  
+    .Promo {
+      width: 80vw;
+      margin-right: 5vw;
+      margin-top: 3vw;
+  
+    }
+  
+    .Title {
+      font-weight: 900;
+      font-size: 10.625vw;
+      letter-spacing: 0.078125vw;
+      line-height: 15.9375vw;
+      display: flex;
+      flex-direction: row;
+      color: #1D1B26;
+    }
+  
+    .Body {
+      width: fit-content;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 5vw;
+      letter-spacing: 0.12625vw;
+      line-height: 7.5vw;
+      color: #1D1B26;
+      padding-bottom: 4vw;
+    }
+  
+    span {
+      font-weight: bold;
+      position: inline;
+    }
+     
+  }
+  
+  /* LAPTOPS */
+  @media (max-width: 992px) {
+  
+     
+  }
+  
+  /* LARGE DEVICES */
+  @media (max-width: 1200px) { 
+        
+  }

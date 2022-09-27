@@ -1,13 +1,9 @@
-/* Page wrapper */
-
 .CaseStudy {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    /* background-color: rgba(100,0,0,.15); */
-    /* backdrop-filter: blur(1vw); */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -16,7 +12,17 @@
     margin-top: 5vw;
 }
 
-/* Section Wrappers */
+.HeroBkg {
+    width: 100vw;
+    height: 60vw;
+    background-image: url(./../../Assets/TopBkg.webp);
+    z-index: 0;
+    position: absolute;
+    background-size: cover;
+    object-fit: fill;
+    background-repeat: none;
+    object-position: center;
+}
 
 .WrapperCol {
     display: flex;
@@ -27,6 +33,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 100vw;
+
 }
 
 .ImgWrapper {
@@ -44,15 +52,6 @@
     top: 50%;
     transform: translateY(-50%);
 }
-
-.Center2 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 
 .PersonaWrapper {
     display: flex;
@@ -151,16 +150,8 @@
     border-top: .15vw solid #C2EDF4;
     border-left: .15vw solid #C2EDF4;
     border-bottom: .15vw solid #C2EDF4;
-}
-
-.CardHug {
-    width: 40vw;
-    height: 43vw;
-    position: relative;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
 .Card2 {
@@ -175,14 +166,9 @@
     border-top: .15vw solid #C2EDF4;
     border-right: .15vw solid #C2EDF4;
     border-bottom: .15vw solid #C2EDF4;
-}
-
-.Card2Hug {
-    width: 40vw;
-    height: 43vw;
-    display: flex;
-    position: relative;
-    background-color: white;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    
 }
 
 .Card3 {
@@ -198,6 +184,8 @@
     z-index: 5;
     border-radius: 2vw;
     border: .30vw solid #C2EDF4;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
 .Lofi {
@@ -225,21 +213,6 @@
     /* -1px -1px 2px 0 #84e0ee; */
 
 }
-
-
-.Footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    width: 100vw;
-    height: fit-content;
-    background-image: url(./../../Assets/BkgPaper.webp);
-    object-fit: cover;
-    border-top: .30vw solid #C2EDF4;
-
-}
-
 
 /* Text content */
 
@@ -283,6 +256,7 @@
     text-transform: uppercase;
     margin-top: 1vw;
 }
+
 
 .SubTitle3 {
     display: flex;
@@ -334,6 +308,7 @@
     color: #1D1B26;
 }
 
+
 .Body2 {
     display: inline;
     max-width: 37vw;
@@ -356,16 +331,15 @@
 .Footer {
     padding: 1vw;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-}
-
-.Personas {
-    width: 28vw;
-    height: fit-content;
-    display: flex;
     flex-direction: column;
-    border-radius: 100vw;
+    justify-content: flex-start;
+    text-align: start;
+    width: 100vw;
+    height: fit-content;
+    background-image: url(./../../Assets/BkgPaper.webp);
+    object-fit: cover;
+    border-top: .30vw solid #C2EDF4;
 }
 
 /* Images */
@@ -425,13 +399,6 @@
     margin-top: 2.7vw;
 }
 
-.Interviews {
-    width: 28vw;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-}
-
 .Sketches {
     width: 37.5vw;
     height: fit-content;
@@ -440,14 +407,6 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.Bkg {
-    position: absolute;
-    width: 100vw;
-    justify-content: start;
-    bottom: -.5vw;
-    overflow: hidden;
 }
 
 /* Exit Modal */
@@ -467,7 +426,7 @@
     justify-content: flex-end;
     position: absolute;
     margin-top: 2vw;
-    z-index: 5;
+    z-index: 8;
     top: -1vw;
     cursor: pointer;
 }  
@@ -478,18 +437,6 @@
     justify-content: flex-end;
     margin-right: 1vw;
     margin-top: 1vw;
-}
-
-
-.HeroBkg {
-    width: 100vw;
-    height: 60vw;
-    background-image: url(./../../Assets/TopBkg.webp);
-    z-index: 0;
-    position: absolute;
-    background-size:cover;
-    object-fit: fill;
-    background-repeat: none;
 }
 
 .BriefBkg {
@@ -529,36 +476,16 @@
 
 .MidBkg {
     width: 100vw;
-    height: 510vw;
+    height: fit-content;
     background-image: url(./../../Assets/MidBkg.webp);
     z-index: 0;
     position: absolute;
-    background-size:contain;
-    object-fit: fill;
-    background-repeat: none;
-}
-
-.FeatureWrapper {
-    width: 100vw;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    background-image: url(./../../Assets/BkgPaper.webp);
+    background-size: contain;
     object-fit: cover;
-    background-repeat: none;
-    /* font-weight: 575;
-    font-size: 1.5vw;
-    letter-spacing: -0.055vw;
-    line-height: 2vw; */
-    /* background-color: white; */
-    position: relative;
-    z-index: 3;
-
-    /* border: .1vw solid #C2EDF4; */
+    /* background-repeat: repeat-x; */
+    margin-top: 50vw;
+    background-repeat: repeat;
+    padding-bottom: 5vw;
 }
 
 .Nudge {
@@ -577,24 +504,6 @@
     height: 48.28vw;
 }
 
-/* .FeatureTitle {
-    max-width: 100vw;
-    height: fit-content;
-    font-size: 4vw;
-    padding: 4vw 0vw;
-    color: #24AFC5;
-    font-weight: 500;
-    position: relative;
-    text-align: center;
-    background-image: url(./../../Assets/BkgPaper.webp);
-    background-position: cover;
-
-} */
-
-.br {
-    height: 1.875vw;
-}
-
 .Signature {
     width: 10vw;
     height: fit-content;
@@ -608,13 +517,9 @@ a {
 
 }
 
-.Span {
-    display: inline;
-}
-
 .NextSteps {
     position: absolute;
-    width: 100vw;
+    max-width: 100vw;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -622,10 +527,1184 @@ a {
     margin-left: 10vw;
 }
 
+/* .MobPaw {
+   display: none;
+} */
+
 .Paws {
-    width: 50vw;
+    width: 45vw;
     height: fit-content;
     position: relative;
     z-index: 0;
     opacity: 10%;
+    margin-left: 45vw;
+    margin-top: 3vw;
+}
+
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+
+/* PHONES */
+@media (max-width: 576px) {
+    
+    .CaseStudy {
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 5;
+        overflow-y: scroll;
+        margin-top: 25vw;
+    }
+    
+    .HeroBkg {
+        width: 100vw;
+        height: 200vw;
+        background-image: url(./../../Assets/TopBkgMob.webp);
+        z-index: 0;
+        position: absolute;
+        background-size: cover;
+        object-fit: fill;
+        background-repeat: none;
+        object-position: center;
+        top: -20vw;
+        width: 100vw;
+    }
+    
+    .WrapperCol {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .WrapperRow {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ImgWrapper {
+        display: flex;
+        flex-direction: row;
+        width: 95vw;
+        padding: 1vw;
+        justify-content: space-around;
+    }
+    
+    .Center {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .PersonaWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .Persona {
+        width: 80vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .PersonaText {
+        display: flex;
+        width: 60vw;
+        height: fit-content;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3.5897435897435894vw;
+        letter-spacing: 0.0641025641025641vw;
+        line-height: 5.384615384615385vw;
+        color: #46464F;
+        font-weight: normal;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        /* margin-left: 2vw; */
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+
+    }
+    
+    .PersonaImg { 
+        display: flex;
+        width: 15vw;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        /* margin-left: 2vw; */
+        padding: 2vw;
+    }
+    
+    /* Cards */
+    
+    .ValueProp {
+        width: 80vw;
+        height: fit-content;
+        /* background-color: white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 575;
+        font-size: 1.5vw;
+        letter-spacing: -0.055vw;
+        line-height: 2vw;
+        color: #24AFC5;
+        padding-top: .5vw;
+        padding-bottom: 2vw;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .Brief {
+        width: 80vw;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .Hero {
+        width: 80vw;
+        height: fit-content;
+        position: relative;
+        /* background-color: white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .Card {
+        width: 90vw;
+        height: fit-content;
+        position: relative;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        object-fit: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 6;
+        border-radius: 2vw;
+        border: .60vw solid #C2EDF4;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        margin-top: 3vw;
+        /* border-left: .15vw solid #C2EDF4;
+        border-bottom: .15vw solid #C2EDF4; */
+    }
+    
+    .Card2 {
+        width: 90vw;
+        height: fit-content;
+        display: flex;
+        position: relative;
+        background-color: white;
+        margin-top: 1vw;
+        z-index: 6;
+           border-radius: 2vw;
+        border: .50vw solid #C2EDF4;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        margin-top: 3vw;
+
+    }
+    
+    .Card3 {
+        width: 90vw;
+        height: fit-content;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1vw;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        object-fit: cover;
+        z-index: 5;
+        border-radius: 2vw;
+        border: .90vw solid #C2EDF4;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        margin-top: 3vw;
+
+    }
+    
+    .Lofi {
+        width: 80vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .Square {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        width: 85vw;
+        height: fit-content;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        object-fit: cover;
+        border: .50vw solid #C2EDF4;
+        border-radius: 3vw;
+        margin-top: 3vw;
+        padding-bottom: 6vw;
+
+        /* box-shadow: 1px 1px 2px 0 #158192, */
+        /* -1px -1px 2px 0 #84e0ee; */
+    
+    }
+    
+    /* Text content */
+    
+    .Title {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Corben', sans-serif;
+        color: #46464F;
+        font-weight: 900;
+        font-size: 8.717948717948717vw;
+        letter-spacing: 0.0641025641025641vw;
+        line-height: 13.076923076923078vw;
+    }
+    
+    
+    .SubTitle {
+        max-width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: 'BIZ UDGothic', sans-serif;
+        font-weight: 900;
+        font-size: 8.717948717948717vw;
+        letter-spacing: 0.0641025641025641vw;
+        line-height: 13.076923076923078vw;
+        color: #4169E1;
+    }
+    
+    .SubTitle2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'BIZ UDGothic', sans-serif;
+        font-weight: bolder;
+        font-size: 6.153846153846154vw;
+        letter-spacing: 0vw;
+        line-height: 2.8125vw;
+        color: #24AFC5;
+        text-transform: uppercase;
+        margin-top: 1vw;
+        padding: 5vw;
+    }
+    
+    .SubTitle3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: 'BIZ UDGothic', sans-serif;
+        font-weight: 900;
+        font-size: 3vw;
+        letter-spacing: 0.003vw;
+        color: #4169E1;
+        padding-top: 2vw;
+    }
+    
+    .Header {
+        max-width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 5.128205128205128vw;
+        letter-spacing: 0.038461538461538464vw;
+        line-height: 7.6923076923076925vw;
+        color: #24AFC5;
+    }
+    
+    .Header2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1.5625vw;
+        letter-spacing: 0.01171875vw;
+        line-height: 2.34375vw;
+        color: #24AFC5;
+    }
+    
+    
+    .Body {
+        max-width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4.102564102564102vw;
+        letter-spacing: 0.1282051282051282vw;
+        line-height: 6.153846153846154vw;
+        color: #1D1B26;
+        /* padding-bottom: 4vw; */
+    }
+    
+    
+    .Body2 {
+        display: inline;
+        max-width: 90vw;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 1vw;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4.102564102564102vw;
+        letter-spacing: 0.1282051282051282vw;
+        line-height: 6.153846153846154vw;
+        color: #1D1B26;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        /* padding-bottom: 5vw; */
+    }
+    
+    .Footer {
+        padding: 1vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: start;
+        width: 100vw;
+        height: fit-content;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        object-fit: cover;
+        border-top: .30vw solid #C2EDF4;
+        position: relative;
+    }
+    
+    /* Images */
+    
+    .ShrinkTank {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 80vw;
+        height: fit-content;
+        z-index: 1;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .MockupKno {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        width: 24vw;
+        position: relative;
+        z-index: 1;
+        margin-right: 1vw;
+        margin-top: 10vw;
+        padding-bottom: 20vw;
+    }
+    
+    .MockupMood {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 24vw;
+        position: relative;
+        z-index: 1;
+        margin-top: 10vw;
+        padding-bottom: 20vw;
+
+    }
+    
+    .MockupMed {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: 22.5vw;
+        position: relative;
+        z-index: 1;
+        margin-left: -1vw;
+        margin-top: 9vw;
+        padding-bottom: 20vw;
+
+    }
+    
+    .MockupCom {
+        display: fle;
+        height: fit-content;
+        flex-direction: column;
+        width: 23.7vw;
+        position: relative;
+        z-index: 1;
+        margin-left: 1.2vw;
+        margin-top: 9.7vw;
+        padding-bottom: 20vw;
+
+    }
+    
+    .Sketches {
+        width: 80vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    /* Exit Modal */
+    .Sticky {
+        display: absolute;
+        position: sticky;
+        top: 0;
+        z-index: 8;
+        cursor: pointer;
+        max-width: 100vw;
+    }
+    
+    .Bunny {
+        width: 20.79vw;
+        height: 13.75vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: absolute;
+        margin-top: 2vw;
+        z-index: 8;
+        top: -1vw;
+        cursor: pointer;
+    }  
+    
+    .Close {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 1vw;
+        margin-top: 1vw;
+    }
+    
+    .BriefBkg {
+        width: 100vw;
+        height: fit-content;
+        background-image: none;
+        z-index: 0;
+        position: absolute;
+        background-size: cover;
+        object-fit: fill;
+        background-repeat: none;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1vw;
+        z-index: 2;
+        justify-content: center;
+        margin-top: 120vw;
+    }
+    
+    .BriefBkg2 {
+        width: 100vw;
+        height: fit-content;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        z-index: 0;
+        position: absolute;
+        background-size:cover;
+        object-fit: fill;
+        background-repeat: none;
+        display: flex;
+        flex-direction: row;
+        margin-top: 110vw;
+        padding-bottom: 2vw;
+        z-index: 2;
+        justify-content: center;
+    
+    }
+    
+    .MidBkg {
+        width: 100vw;
+        height: fit-content;
+        background-image: url(./../../Assets/MidBkgMob.webp);
+        z-index: 0;
+        position: absolute;
+        background-size: contain;
+        object-fit: cover;
+        /* background-repeat: repeat-x; */
+        margin-top: 135vw;
+        background-repeat: repeat;
+        padding-bottom: 5vw;
+    }
+    
+    .Nudge {
+        margin-top: 145vw;
+        justify-content: center;
+    }
+    
+    .Squeeze {
+        width: 86vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .Feature {
+        width: 87.261vw;
+        height: 48.28vw;
+    }
+    
+    .Signature {
+        width: 40vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    a {
+        margin-left: .3vw;
+    
+    }
+    
+    .NextSteps {
+        position: absolute;
+        max-width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: 10vw;
+    }
+
+    .MobPaw {
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+    .Paws {
+        width: 45vw;
+        height: 60vw;
+        position: relative;
+        z-index: 6;
+        opacity: 10%;
+        /* margin-left: 45vw; */
+        margin-top: 40vw;
+        transform: scale(3);
+    }
+
+
+ }
+
+/* TABLETS */
+@media (max-width: 768px) { 
+    .CaseStudy {
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 5;
+        overflow-y: scroll;
+        margin-top: 25vw;
+    }
+    
+    .HeroBkg {
+        width: 100vw;
+        height: 200vw;
+        background-image: url(./../../Assets/TopBkgMob.webp);
+        z-index: 0;
+        position: absolute;
+        background-size: cover;
+        object-fit: fill;
+        background-repeat: none;
+        object-position: center;
+        top: -20vw;
+        width: 100vw;
+    }
+    
+    .WrapperCol {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .WrapperRow {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ImgWrapper {
+        display: flex;
+        flex-direction: row;
+        width: 95vw;
+        padding: 1vw;
+        justify-content: space-around;
+    }
+    
+    .Center {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .PersonaWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .Persona {
+        width: 80vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .PersonaText {
+        display: flex;
+        width: 60vw;
+        height: fit-content;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3.5897435897435894vw;
+        letter-spacing: 0.0641025641025641vw;
+        line-height: 5.384615384615385vw;
+        color: #46464F;
+        font-weight: normal;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        /* margin-left: 2vw; */
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+
+    }
+    
+    .PersonaImg { 
+        display: flex;
+        width: 15vw;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        /* margin-left: 2vw; */
+        padding: 2vw;
+    }
+    
+    /* Cards */
+    
+    .ValueProp {
+        width: 80vw;
+        height: fit-content;
+        /* background-color: white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 575;
+        font-size: 1.5vw;
+        letter-spacing: -0.055vw;
+        line-height: 2vw;
+        color: #24AFC5;
+        padding-top: .5vw;
+        padding-bottom: 2vw;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .Brief {
+        width: 80vw;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .Hero {
+        width: 80vw;
+        height: fit-content;
+        position: relative;
+        /* background-color: white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .Card {
+        width: 90vw;
+        height: fit-content;
+        position: relative;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        object-fit: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 6;
+        border-radius: 2vw;
+        border: .60vw solid #C2EDF4;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        margin-top: 3vw;
+        /* border-left: .15vw solid #C2EDF4;
+        border-bottom: .15vw solid #C2EDF4; */
+    }
+    
+    .Card2 {
+        width: 90vw;
+        height: fit-content;
+        display: flex;
+        position: relative;
+        background-color: white;
+        margin-top: 1vw;
+        z-index: 6;
+           border-radius: 2vw;
+        border: .50vw solid #C2EDF4;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        margin-top: 3vw;
+
+    }
+    
+    .Card3 {
+        width: 90vw;
+        height: fit-content;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1vw;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        object-fit: cover;
+        z-index: 5;
+        border-radius: 2vw;
+        border: .90vw solid #C2EDF4;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        margin-top: 3vw;
+
+    }
+    
+    .Lofi {
+        width: 80vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .Square {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        width: 85vw;
+        height: fit-content;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        object-fit: cover;
+        border: .50vw solid #C2EDF4;
+        border-radius: 3vw;
+        margin-top: 3vw;
+        padding-bottom: 6vw;
+
+        /* box-shadow: 1px 1px 2px 0 #158192, */
+        /* -1px -1px 2px 0 #84e0ee; */
+    
+    }
+    
+    /* Text content */
+    
+    .Title {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Corben', sans-serif;
+        color: #46464F;
+        font-weight: 900;
+        font-size: 8.717948717948717vw;
+        letter-spacing: 0.0641025641025641vw;
+        line-height: 13.076923076923078vw;
+    }
+    
+    
+    .SubTitle {
+        max-width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: 'BIZ UDGothic', sans-serif;
+        font-weight: 900;
+        font-size: 8.717948717948717vw;
+        letter-spacing: 0.0641025641025641vw;
+        line-height: 13.076923076923078vw;
+        color: #4169E1;
+    }
+    
+    .SubTitle2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'BIZ UDGothic', sans-serif;
+        font-weight: bolder;
+        font-size: 6.153846153846154vw;
+        letter-spacing: 0vw;
+        line-height: 2.8125vw;
+        color: #24AFC5;
+        text-transform: uppercase;
+        margin-top: 1vw;
+        padding: 5vw;
+    }
+    
+    .SubTitle3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: 'BIZ UDGothic', sans-serif;
+        font-weight: 900;
+        font-size: 3vw;
+        letter-spacing: 0.003vw;
+        color: #4169E1;
+        padding-top: 2vw;
+    }
+    
+    .Header {
+        max-width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 5.128205128205128vw;
+        letter-spacing: 0.038461538461538464vw;
+        line-height: 7.6923076923076925vw;
+        color: #24AFC5;
+    }
+    
+    .Header2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1.5625vw;
+        letter-spacing: 0.01171875vw;
+        line-height: 2.34375vw;
+        color: #24AFC5;
+    }
+    
+    
+    .Body {
+        max-width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4.102564102564102vw;
+        letter-spacing: 0.1282051282051282vw;
+        line-height: 6.153846153846154vw;
+        color: #1D1B26;
+        /* padding-bottom: 4vw; */
+    }
+    
+    
+    .Body2 {
+        display: inline;
+        max-width: 90vw;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 1vw;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4.102564102564102vw;
+        letter-spacing: 0.1282051282051282vw;
+        line-height: 6.153846153846154vw;
+        color: #1D1B26;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        /* padding-bottom: 5vw; */
+    }
+    
+    .Footer {
+        padding: 1vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: start;
+        width: 100vw;
+        height: fit-content;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        object-fit: cover;
+        border-top: .30vw solid #C2EDF4;
+        position: relative;
+    }
+    
+    /* Images */
+    
+    .ShrinkTank {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 80vw;
+        height: fit-content;
+        z-index: 1;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .MockupKno {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        width: 24vw;
+        position: relative;
+        z-index: 1;
+        margin-right: 1vw;
+        margin-top: 10vw;
+        padding-bottom: 20vw;
+    }
+    
+    .MockupMood {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 24vw;
+        position: relative;
+        z-index: 1;
+        margin-top: 10vw;
+        padding-bottom: 20vw;
+
+    }
+    
+    .MockupMed {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: 22.5vw;
+        position: relative;
+        z-index: 1;
+        margin-left: -1vw;
+        margin-top: 9vw;
+        padding-bottom: 20vw;
+
+    }
+    
+    .MockupCom {
+        display: fle;
+        height: fit-content;
+        flex-direction: column;
+        width: 23.7vw;
+        position: relative;
+        z-index: 1;
+        margin-left: 1.2vw;
+        margin-top: 9.7vw;
+        padding-bottom: 20vw;
+
+    }
+    
+    .Sketches {
+        width: 80vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    /* Exit Modal */
+    .Sticky {
+        display: absolute;
+        position: sticky;
+        top: 0;
+        z-index: 8;
+        cursor: pointer;
+        max-width: 100vw;
+    }
+    
+    .Bunny {
+        width: 20.79vw;
+        height: 13.75vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: absolute;
+        margin-top: 2vw;
+        z-index: 8;
+        top: -1vw;
+        cursor: pointer;
+    }  
+    
+    .Close {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 1vw;
+        margin-top: 1vw;
+    }
+    
+    .BriefBkg {
+        width: 100vw;
+        height: fit-content;
+        background-image: none;
+        z-index: 0;
+        position: absolute;
+        background-size: cover;
+        object-fit: fill;
+        background-repeat: none;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1vw;
+        z-index: 2;
+        justify-content: center;
+        margin-top: 120vw;
+    }
+    
+    .BriefBkg2 {
+        width: 100vw;
+        height: fit-content;
+        background-image: url(./../../Assets/BkgPaper.webp);
+        z-index: 0;
+        position: absolute;
+        background-size:cover;
+        object-fit: fill;
+        background-repeat: none;
+        display: flex;
+        flex-direction: row;
+        margin-top: 110vw;
+        padding-bottom: 2vw;
+        z-index: 2;
+        justify-content: center;
+    
+    }
+    
+    .MidBkg {
+        width: 100vw;
+        height: fit-content;
+        background-image: url(./../../Assets/MidBkgMob.webp);
+        z-index: 0;
+        position: absolute;
+        background-size: contain;
+        object-fit: cover;
+        /* background-repeat: repeat-x; */
+        margin-top: 135vw;
+        background-repeat: repeat;
+        padding-bottom: 5vw;
+    }
+    
+    .Nudge {
+        margin-top: 145vw;
+        justify-content: center;
+    }
+    
+    .Squeeze {
+        width: 86vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .Feature {
+        width: 87.261vw;
+        height: 48.28vw;
+    }
+    
+    .Signature {
+        width: 40vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    a {
+        margin-left: .3vw;
+    
+    }
+    
+    .NextSteps {
+        position: absolute;
+        max-width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: 10vw;
+    }
+
+    .MobPaw {
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+    .Paws {
+        width: 45vw;
+        height: 60vw;
+        position: relative;
+        z-index: 6;
+        opacity: 10%;
+        /* margin-left: 45vw; */
+        margin-top: 40vw;
+        transform: scale(3);
+    }
+    
+}
+
+/* LAPTOPS */
+@media (max-width: 992px) {
+
+    
+ }
+
+/* LARGE DEVICES */
+@media (max-width: 1200px) { 
+       
 }

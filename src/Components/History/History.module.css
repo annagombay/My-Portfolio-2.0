@@ -7,7 +7,7 @@
 .BkgSquiggles {
     display: relative;
     width: 100vw;
-    height: 52vw;
+    height: fit-content;
     object-fit: cover;
     background-repeat: none;
     position: static;
@@ -23,10 +23,10 @@
     letter-spacing: .02vw;
     color: black;
     position: relative;
-    z-index: 5;
+    z-index: 8;
     margin-left: 5vw;
     z-index: 1;
-    margin-top: 2vw;
+    margin-top: 5vw;
 }
 
 .ImgWrapper {
@@ -50,12 +50,102 @@
     margin-left: 2.5vw;
     z-index: 4;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-top: -4vw;
 }
 
-.Square {
+.HistoryDesk {
     display: flex;
-    padding-top: 10vw;
+    position: relative;
 }
+
+.HistoryMob {
+    display: none;
+}
+
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+/* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
+
+
+/* PHONES */
+@media (max-width: 576px) {
+
+    .All {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .BkgSquiggles {
+        display: relative;
+        width: 100vw;
+        height: fit-content;
+        object-fit: cover;
+        background-repeat: none;
+        position: absolute;
+        object-fit: cover;
+        z-index: 0;
+    }
+    
+    .Header {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Cedarville Cursive';
+        font-size: 10.4vw;
+        letter-spacing: .02vw;
+        color: black;
+        position: relative;
+        z-index: 5;
+        margin-left: 5vw;
+        margin-top: 156vw;
+    }
+    
+    .ImgWrapper {
+        display: relative;
+        position: absolute;
+        width: 100vw;
+        height: fit-content;
+        object-fit: cover;
+        background-repeat: none;
+        position: static;
+        z-index: 0;
+        margin-top: 46vw;
+    }
+    
+    .HistoryImg {
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        margin-left: 2.5vw;
+        z-index: 4;
+        position: relative;
+        margin-top: 5vw;
+    }
+    
+    .HistoryDesk {
+        display: none;
+    }
+    
+    .HistoryMob {
+        display: flex;
+    }
+    
+    }
+    
+    /* TABLETS */
+    @media (max-width: 768px) { 
+       
+    }
+    
+    /* LAPTOPS */
+    @media (max-width: 992px) {
+    
+       
+    }
+    
+    /* LARGE DEVICES */
+    @media (max-width: 1200px) { 
+          
+    }

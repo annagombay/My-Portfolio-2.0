@@ -19,10 +19,10 @@ import Feature3 from "./../../Assets/Feature3.webp";
 import Lofi from "./../../Assets/Lofi.webp";
 import Signature from "./../../Assets/Signature.webp";
 import NextSteps from "./../../Assets/nextSteps.svg";
-// import { CSSTransition } from 'react-transition.group';
 
 class Modal extends React.Component {
     render() { 
+        
         if (!this.props.show) {
             return null
         }
@@ -30,7 +30,8 @@ class Modal extends React.Component {
             <div className={styles.CaseStudy} onClick={this.props.onClose}>
                 <div className={styles.HeroBkg}>
                 </div>
-                <div className={styles.Sticky}>
+                                
+                <div className={styles.Sticky} onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}> 
                     <div className={styles.Close} onClick={this.props.onClose} >
                         <img className={styles.Bunny} src={Bunny} alt='Bunny'/>
                     </div>
@@ -79,6 +80,8 @@ class Modal extends React.Component {
                         </div>
                     </div> 
                 </div>  
+                <div className={styles.MidBkg}>
+
                 <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
                     <div className={styles.BriefBkg}>
                         <div className={styles.Squeeze}>
@@ -124,8 +127,6 @@ class Modal extends React.Component {
                     </div>
                 </div>
                 <div className={styles.Nudge}>
-                    <div className={styles.MidBkg}>
-                    </div>
                     <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
                         <div className={styles.Card} onClick= {e => e.stopPropagation()} id="green">
                             <div className={styles.WrapperCol}>
@@ -138,13 +139,13 @@ class Modal extends React.Component {
                                     </div>
                                         <br></br>
                                     <div className={styles.Body}>
-                                        The system used to diagnose mental health disorders is rooted in observational research that has yet to be genetically validated despite 70 years of research. 
+                                        The system used to diagnose mental health disorders is rooted in observational research that has yet to be genetically validated despite 70 years of research.  
                                             <br></br>
                                             <br></br>
-                                        In 2013, Tom Insel–Director of NIHM, the largest mental health research organization in the world–urged that “we cannot design a system based on biomarkers or cognitive performance because we lack the data". 
+                                        In 2013, Tom Insel–Director of NIHM, the largest mental health research organization in the world–urged that “we cannot design a system based on biomarkers or cognitive performance because we lack the data".
                                             <br></br>
                                             <br></br>
-                                        It's 2022; Tom Insel left NIHM for Google, and psychiatrists are still using the same "gold standard" system to determine treatment outcomes for those deemed mentally ill. 
+                                        It's 2022; Tom Insel left NIHM for Google, and psychiatrists are still using the same "gold standard" system to determine medical interventions for those deemed mentally ill.                                     
                                     </div>
                                 </div>
                             </div>
@@ -170,12 +171,10 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    To establish an understanding of my intended users, I conducted five one-on-one interviews with people who had taken psychiatric medication daily for at least 6 months. 
+                                    To learn about my intended users, I engaged in five one-on-one interviews with people who had taken psychiatric medication daily for at least 6 months.
                                         <br></br> 
                                         <br></br>
-                                     Conversations revolved around mood, symptoms, and self-reported experiences of medication use. My goal was to learn about the daily experiences of those taking psychiatric medication, and begin forming an understanding of the problems they encounter. 
-                                    <br></br> 
-                                    <br></br>
+                                     Conversations revolved around mood, symptoms, and self-reported experiences of medication use. My goal here was to begin forming a general understanding of what daily life feels like for people who take psychiatric medication. 
                                 </div>
                             </div>
                         </div>
@@ -197,10 +196,13 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    To discern themes in feedback, I collapsed my interview notes and divided them into clusters of wants, needs, pains, and opportunities reported throughout the conversations.
+                                    To identify themes in interview feedback, I collapsed my notes into clusters of wants, needs, pains, and opportunities.
                                         <br></br>
                                         <br></br>
-                                    I then merged my data into hypothetical personas who represent various experiences those taking psychiatric medication might face. These personas anchored my empathy throughout the design process by...
+                                    Using the same data, I then created hypothetical personas who illustrate different experiences people taking psychiatric medication might encounter. 
+                                        <br></br>
+                                        <br></br>
+                                    These personas served as vantage points from which I could imagine problematic scenarios related to medication use; they anchored my empathy and inspired solutions throughout the design process.
                                 </div>
                             </div>
                         </div>
@@ -245,10 +247,10 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    To broaden the scope from which I could brainstorm design themes, I created an exhaustive list of user-relevant problems, ideas, quotes, emotions, thoughts, and potential solutions. 
+                                    To broaden the scope from which I could brainstorm design themes, I created an exhaustive list of user-relevant problems, ideas, quotes, emotions, thoughts, and more.
                                         <br></br>
                                         <br></br>
-                                     I considered any information that could help me understand the realities of different types of psychiatric medication users valuable.
+                                    I considered any information that could help me understand the realities of different types of psychiatric medication users valuable.
                                 </div>
                             </div>
                         </div>
@@ -270,10 +272,13 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    To understand my competitive landscape, I analyzed existing mobile apps with missions similar to my own. The most significant drawback I identified was that all of my competitor's mood scales categorized mood from "very good" to "very bad", but did not capture the intensity of a given "positive" or "negative" mood.
+                                    To understand my competitive landscape, I analyzed existing mobile apps with goals similar to my own. 
                                         <br></br>
                                         <br></br>
-                                    This method feels limited because a) it risks an implication that "high" moods are categorically good, and "low" moods are categorically bad, and b) it fails to capture the underlying current of energy projecting a given mood. To encourage a perspective that moods are dynamic, and all valuable for different reasons, I decided to include a second dimension in my mood scale that would measure mood intensity, // as well ...as avoid language that assigns value to mood //  
+                                    The most significant drawback I identified was that all of my competitor's mood scales categorized mood from "very good" to "very bad", but did not capture the intensity of a given "positive" or "negative" mood. This method feels limited because it risks an implication that "high" moods are categorically good, and "low" moods are categorically bad. 
+                                        <br></br>
+                                        <br></br>
+                                    To encourage a perspective that moods are dynamic, and all valuable for different reasons, I decided to include a second dimension in my mood scale that would measure mood intensity. 
                                 </div>
                             </div>
                         </div>
@@ -295,10 +300,13 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    Once I had determined the fundamental features to be included in the app, I created rough sketches of the prototype. The most important thing I recognized throughout my user research was that individuals taking psychiatric medication should not be acknowledged purely based on their illnesses. 
+                                    The most important thing I recognized throughout my user research was that individuals taking psychiatric medication should not be acknowledged purely based on prescriptions of illness. 
                                         <br></br>
                                         <br></br>
-                                    It felt crucial to build a dynamic environment that promoted a "whole person approach" to mental health support. To this end, in addition to providing users with data surrounding the impact (or lack thereof) of medication on daily well-being, I wanted to foster an online community for likeminded people to connect, as well as provide a knowledge base to support psycho-education. 
+                                    It felt crucial to promote a whole-person approach to mental health support by addressing factors not typically addressed within the confines of an app that measures mood. 
+                                        <br></br>
+                                        <br></br>
+                                    To this end, in addition to providing users with data surrounding the impact (or lack thereof) of medication on daily well-being, I decided to build an online chat forum for people to connect about mental health, as well as a knowledge base to support users’ psycho-education. 
                                 </div>
                             </div>
                         </div>
@@ -343,10 +351,10 @@ class Modal extends React.Component {
                                     </div>
                                         <br></br>
                                     <div className={styles.Header2}>
-                                        Dynamically measure medication use and mood 
-                                    <div className={styles.Body}>
+                                        An app that allows users to dynamically measure medication use and mood... 
+                                    {/* <div className={styles.Body}>
                                         An app that... 
-                                    </div>
+                                    </div> */}
                                 </div>
                                         <br></br>
                                         <br></br>
@@ -354,7 +362,7 @@ class Modal extends React.Component {
                                         <br></br>
                                         <br></br>
                                     <div className={styles.Header2}>
-                                        Connect anonymously with a safe community
+                                        ...connect anonymously with a safe community...
                                     </div>
                                         <br></br>
                                         <br></br>
@@ -362,7 +370,7 @@ class Modal extends React.Component {
                                         <br></br>
                                         <br></br>
                                     <div className={styles.Header2}>
-                                        Access educational content on mental health 
+                                        ... and access educational content on mental health. 
                                     </div>
                                         <br></br>
                                         <br></br>
@@ -374,10 +382,13 @@ class Modal extends React.Component {
                         </div> 
                     </div>
                 </div>
+               
                 <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
                     <div className={styles.BriefBkg2}>
                             <div className={styles.NextSteps}>
-                                <img className={styles.Paws} src={NextSteps} alt="paws"/>
+                                <div className={styles.MobPaw}>
+                                    <img className={styles.Paws} src={NextSteps} alt="paws"/>
+                                </div>
                             </div>
                             <div className={styles.Footer}>
                                 <div className={styles.SubTitle2}>
@@ -387,7 +398,7 @@ class Modal extends React.Component {
                                     I'm currently in the process of developing OKNOTOK using a ReactJS framework. The release date is set for mid-2023. 
                                         <br></br>
                                         <br></br>
-                                    <span className={styles.Span}>
+                                    <span>
                                         If you are interested in becoming a beta user or learning more about the project, please contact 
                                         <a href="mailto:OKNOTOKapp@gmail.com">
                                              OKNOTOKapp@gmail.com
@@ -407,6 +418,7 @@ class Modal extends React.Component {
                         </div>
                     </div>
                 </div>
+            </div>
             )
         }
     }

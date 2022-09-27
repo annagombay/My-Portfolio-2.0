@@ -9,7 +9,9 @@ function Projects() {
     
     return (
         <div className={styles.All}>
+            
             <img src={BkgSquiggles} alt="BkgSquiggles" className={styles.BkgSquiggles}/>
+
                 <div className={styles.ProjectWrapper}>
                     <div className={styles.Header}>
                     My Projects
@@ -17,7 +19,7 @@ function Projects() {
                     <div className={styles.WrapperCol}>
                         <div className={styles.Square}>
                             <div className={styles.ImgWrapper}>
-                                <img className={styles.Promo} src={Promo}/>
+                                <img className={styles.Promo} src={Promo} alt="promo"/>
                             </div>
                             <div className={styles.WrapperRow}>
                                 <div className={styles.Title}>
