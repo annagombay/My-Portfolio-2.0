@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio-2.0/static/css/main.b852f368.css",
-    "main.js": "/My-Portfolio-2.0/static/js/main.0b530b97.js",
+    "main.css": "/My-Portfolio-2.0/static/css/main.d44676c8.css",
+    "main.js": "/My-Portfolio-2.0/static/js/main.6d7f6bdb.js",
     "static/js/787.341beed5.chunk.js": "/My-Portfolio-2.0/static/js/787.341beed5.chunk.js",
     "static/media/HeroMob.webp": "/My-Portfolio-2.0/static/media/HeroMob.d9dde9119f39c01a53b2.webp",
     "static/media/HistoryDesk.webp": "/My-Portfolio-2.0/static/media/HistoryDesk.d244807e5340706c4958.webp",
@@ -38,12 +38,12 @@
     "static/media/EmailIcon.png": "/My-Portfolio-2.0/static/media/EmailIcon.b3d873b85af1375f0b9e.png",
     "static/media/Bunny.webp": "/My-Portfolio-2.0/static/media/Bunny.5da0f22fa8e2ef203fec.webp",
     "index.html": "/My-Portfolio-2.0/index.html",
-    "main.b852f368.css.map": "/My-Portfolio-2.0/static/css/main.b852f368.css.map",
-    "main.0b530b97.js.map": "/My-Portfolio-2.0/static/js/main.0b530b97.js.map",
+    "main.d44676c8.css.map": "/My-Portfolio-2.0/static/css/main.d44676c8.css.map",
+    "main.6d7f6bdb.js.map": "/My-Portfolio-2.0/static/js/main.6d7f6bdb.js.map",
     "787.341beed5.chunk.js.map": "/My-Portfolio-2.0/static/js/787.341beed5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b852f368.css",
-    "static/js/main.0b530b97.js"
+    "static/css/main.d44676c8.css",
+    "static/js/main.6d7f6bdb.js"
   ]
 }
