@@ -139,7 +139,7 @@ class Modal extends React.Component {
                                     </div>
                                         <br></br>
                                     <div className={styles.Body}>
-                                        The system used to diagnose mental health disorders is rooted in observational research that has yet to be genetically validated despite 70 years of research.  
+                                        The system used to diagnose mental health disorders is rooted in observational research that has yet to be biologically validated despite 70 years of research.  
                                             <br></br>
                                             <br></br>
                                         In 2013, Tom Insel–Director of NIHM, the largest mental health research organization in the world–urged that “we cannot design a system based on biomarkers or cognitive performance because we lack the data".
