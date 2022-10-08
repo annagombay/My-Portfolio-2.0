@@ -92,6 +92,7 @@ button, a {
     top: 0;
     z-index: 6;
     box-shadow: rgba(117, 174, 227, 0.2) 0px 0.625vw 1.875vw;
+    
 }
 
 .Title {
@@ -114,34 +115,20 @@ button, a {
 }
 
 .SocialLinks{
-    width: 40vw;
-    height: 10vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 4vw;
-    z-index: 5;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    display:flex;height:10vw;padding-left:2vw;position:relative;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:10vw;z-index:5;
 }
 
 .SocialLink{
-    width: 10vw;
-    height: 10vw;
-    display: flex;
-    padding-left: 2vw;
-    z-index: 5;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+
+
+    height:10vw;justify-content:flex-end;margin-right:4vw;width:40vw;z-index:5;
 }
 
 .Squeeze {
-    display: flex;
-    flex-direction: row;
-    width: 11vw;
-    justify-content: flex-end;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    width:11vw;
 }
 
 span {
@@ -150,6 +137,10 @@ span {
 
 button {
     all: inherit;
+}
+
+a {
+    margin-top: -2vw;
 }
 
 }
@@ -224,6 +215,10 @@ button {
     
     button {
         all: inherit;
+    }
+
+    a {
+        margin-top: -2vw;
     }
    
 }

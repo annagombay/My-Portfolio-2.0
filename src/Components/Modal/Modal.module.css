@@ -688,16 +688,14 @@ a {
         flex-direction: row;
         justify-content: center;
         font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 575;
-        font-size: 1.5vw;
-        letter-spacing: -0.055vw;
-        line-height: 2vw;
-        color: #24AFC5;
-        padding-top: .5vw;
-        padding-bottom: 2vw;
-        position: relative;
-        z-index: 2;
+        font-size:5.128205128205128vw;
+        font-style:normal;
+        font-weight:575;
+        letter-spacing:.038461538461538464vw;
+        line-height:7.6923076923076925vw;
+        padding-bottom:2vw;
+        padding-top:.5vw;
+        z-index:2;
     }
     
     .Brief {
@@ -774,13 +772,14 @@ a {
     }
     
     .Lofi {
-        width: 80vw;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        display:flex;
+        height:95vw;
+        justify-content:center;
+        position:relative;
+        top:50%;
+        -webkit-transform:translateY(-50%);
+        transform:translateY(-50%);
+        width:80vw;
     }
     
     .Square {
@@ -886,8 +885,8 @@ a {
     
     .Body {
         max-width: 80vw;
-        display: flex;
-        flex-direction: row;
+        display: block;
+        flex-direction: column;
         justify-content: flex-start;
         font-family: 'Roboto', sans-serif;
         font-size: 4.102564102564102vw;
@@ -1019,16 +1018,13 @@ a {
     }
     
     .Bunny {
-        width: 20.79vw;
-        height: 13.75vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        position: absolute;
-        margin-top: 2vw;
-        z-index: 8;
-        top: -1vw;
-        cursor: pointer;
+        cursor:pointer;
+        height:13.75vw;
+        margin-top:9vw;
+        position:absolute;
+        top:1vw;
+        width:20.79vw;
+        z-index:8;
     }  
     
     .Close {
@@ -1142,6 +1138,7 @@ a {
         /* margin-left: 45vw; */
         margin-top: 40vw;
         transform: scale(3);
+        display: none;
     }
 
 
@@ -1264,16 +1261,14 @@ a {
         flex-direction: row;
         justify-content: center;
         font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 575;
-        font-size: 1.5vw;
-        letter-spacing: -0.055vw;
-        line-height: 2vw;
-        color: #24AFC5;
-        padding-top: .5vw;
-        padding-bottom: 2vw;
-        position: relative;
-        z-index: 2;
+        font-size:5.128205128205128vw;
+        font-style:normal;
+        font-weight:575;
+        letter-spacing:.038461538461538464vw;
+        line-height:7.6923076923076925vw;
+        padding-bottom:2vw;
+        padding-top:.5vw;
+        z-index:2;
     }
     
     .Brief {
@@ -1350,13 +1345,14 @@ a {
     }
     
     .Lofi {
-        width: 80vw;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        display:flex;
+        height:95vw;
+        justify-content:center;
+        position:relative;
+        top:50%;
+        -webkit-transform:translateY(-50%);
+        transform:translateY(-50%);
+        width:80vw;
     }
     
     .Square {
@@ -1462,8 +1458,8 @@ a {
     
     .Body {
         max-width: 80vw;
-        display: flex;
-        flex-direction: row;
+        display: block;
+        flex-direction: column;
         justify-content: flex-start;
         font-family: 'Roboto', sans-serif;
         font-size: 4.102564102564102vw;
@@ -1595,16 +1591,13 @@ a {
     }
     
     .Bunny {
-        width: 20.79vw;
-        height: 13.75vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        position: absolute;
-        margin-top: 2vw;
-        z-index: 8;
-        top: -1vw;
-        cursor: pointer;
+        cursor:pointer;
+        height:13.75vw;
+        margin-top:9vw;
+        position:absolute;
+        top:1vw;
+        width:20.79vw;
+        z-index:8;
     }  
     
     .Close {
@@ -1718,6 +1711,7 @@ a {
         /* margin-left: 45vw; */
         margin-top: 40vw;
         transform: scale(3);
+        display: none;
     }
     
 }
