@@ -6,9 +6,10 @@ import History from "./Components/History/History";
 import Projects from "./Components/Projects/Projects";
 import Modal from "./Components/Modal/Modal";
 import {useEffect} from 'react';
-// import { useMediaQuery } from 'react-responsive'
-// import TypeAnimation from 'react-type-animation';
-// import { useInView } from 'react-intersection-observer';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-157371955-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 function App() {
   useEffect(() => {
@@ -21,7 +22,7 @@ function App() {
   //  { myElementIsVisible ?  'yes' : 'No'}
 
   return (
-    
+  
     <div className={styles.App}>
             <Navbar/>
             <Hero/>

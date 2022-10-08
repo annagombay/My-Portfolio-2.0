@@ -1,3 +1,27 @@
+
+sup {
+    display:inline;
+    text-decoration: none;
+    color:#4169e1;
+    cursor:
+    pointer;
+    font-weight:700;
+}
+
+span, .Link {
+    color:#4169e1;
+    cursor:pointer;
+    display:inline;
+    text-decoration:underline;
+}
+
+.NotSpan {
+    color:#1d1b26;
+    cursor:default;
+    display:inline;
+    text-decoration: none;
+}
+
 .CaseStudy {
     position: fixed;
     left: 0;
@@ -298,7 +322,7 @@
 
 .Body {
     max-width: 33vw;
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: flex-start;
     font-family: 'Roboto', sans-serif;

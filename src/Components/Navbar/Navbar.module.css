@@ -31,7 +31,7 @@
 
 .SocialLinks{
     width: 5vw;
-    height: 5vw;
+    height: 4vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -43,21 +43,24 @@
 }
 
 .SocialLink{
-    width: 4vw;
-    height: 4vw;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 5;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
+    cursor:pointer;
+    display:flex;
+    height:4vw;
+    justify-content:flex-end;
+    padding-left:.5vw;
+    position:relative;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+    width:4vw;
+    z-index:5;
 }
 
 .Squeeze {
     display: flex;
     flex-direction: row;
     width: 5vw;
+    height: 4vw;
     justify-content: flex-end;
 }
 
@@ -65,7 +68,7 @@ span {
     all: inherit;
 }
 
-button {
+button, a {
     all: inherit;
 }
 

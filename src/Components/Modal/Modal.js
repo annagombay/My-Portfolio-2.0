@@ -22,6 +22,9 @@ import NextSteps from "./../../Assets/nextSteps.svg";
 
 class Modal extends React.Component {
     render() { 
+        const openInNewTab = url => {
+            window.open(url, '_blank', 'noopener,noreferrer');
+          };
         
         if (!this.props.show) {
             return null
@@ -29,8 +32,7 @@ class Modal extends React.Component {
         return (
             <div className={styles.CaseStudy} onClick={this.props.onClose}>
                 <div className={styles.HeroBkg}>
-                </div>
-                                
+                </div>     
                 <div className={styles.Sticky} onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}> 
                     <div className={styles.Close} onClick={this.props.onClose} >
                         <img className={styles.Bunny} src={Bunny} alt='Bunny'/>
@@ -39,13 +41,13 @@ class Modal extends React.Component {
                 <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
                     <div className={styles.Brief} onClick= {e => e.stopPropagation()}>
                         <div className={styles.Title}>
-                            OKNOTOK
+                            OK NOT OK
                         </div>
                     </div>
                 </div>
                 <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
                     <div className={styles.ValueProp} onClick= {e => e.stopPropagation()}>
-                        The app that does x to help you do y.  
+                        Mind your medication.
                     </div> 
                 </div>
                 <div className={styles.WrapperRow} onClick= {e => e.stopPropagation()}>
@@ -137,15 +139,15 @@ class Modal extends React.Component {
                                     <div className={styles.Header}>
                                         The impact of psychiatric medication on the human brain is inadequately measured and narrowly understood. 
                                     </div>
-                                        <br></br>
+                                    <br></br>
                                     <div className={styles.Body}>
-                                        The system used to diagnose mental health disorders is rooted in observational research that has yet to be biologically validated despite 70 years of research.  
+                                        The system used to diagnose mental health disorders is rooted in observational research that has yet to be biologically validated despite over 60 years of research.<sup onClick={() => openInNewTab('https://rdcu.be/cWCZC')}>1, </sup><sup onClick={() => openInNewTab('https://www.nature.com/articles/s41398-020-0835-5.pdf')}>2, </sup><sup onClick={() => openInNewTab('https://www.goodreads.com/book/show/40180010-mind-fixers')}>3</sup>
                                             <br></br>
                                             <br></br>
-                                        In 2013, Tom Insel–Director of NIHM, the largest mental health research organization in the world–urged that “we cannot design a system based on biomarkers or cognitive performance because we lack the data".
+                                        In 2013, Tom Insel–Director of <span onClick={() => openInNewTab('https://www.nimh.nih.gov/')}>NIMH</span>, the largest mental health research organization in the world–urged that "we cannot design a system based on biomarkers or cognitive performance because we lack the data".<sup onClick={() => openInNewTab('http://psychrights.org/2013/130429NIMHTransformingDiagnosis.htm')}>4</sup>
                                             <br></br>
                                             <br></br>
-                                        It's 2022; Tom Insel left NIHM for Google, and psychiatrists are still using the same "gold standard" system to determine medical interventions for those deemed mentally ill.                                     
+                                        It's 2022; Tom Insel left NIMH for Google<sup onClick={() => openInNewTab('https://www.apa.org/monitor/2016/01/personalities-google ')}>5</sup>, and psychiatrists are still using the same "gold standard" system to determine medical interventions for those deemed mentally ill.  
                                     </div>
                                 </div>
                             </div>
@@ -171,10 +173,13 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    To learn about my intended users, I engaged in five one-on-one interviews with people who had taken psychiatric medication daily for at least 6 months.
+                                    I engaged in five one-on-one interviews with people who had taken psychiatric medication daily for at least 6 months.
                                         <br></br> 
                                         <br></br>
-                                     Conversations revolved around mood, symptoms, and self-reported experiences of medication use. My goal here was to begin forming a general understanding of what daily life feels like for people who take psychiatric medication. 
+                                     Conversations revolved around mood, symptoms, and self-reported experiences of medication use.
+                                        <br></br> 
+                                        <br></br>
+                                     My goal here was to form a general understanding of what daily life feels like for people who take psychiatric medication. 
                                 </div>
                             </div>
                         </div>
@@ -196,13 +201,13 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    To identify themes in interview feedback, I collapsed my notes into clusters of wants, needs, pains, and opportunities.
+                                    To identify themes in feedback, I collapsed my notes into clusters of wants, needs, pains, and opportunities.
                                         <br></br>
                                         <br></br>
-                                    Using the same data, I then created hypothetical personas who illustrate different experiences people taking psychiatric medication might encounter. 
+                                    I then created hypothetical personas who illustrate varying experiences people taking psychiatric medication might encounter. 
                                         <br></br>
                                         <br></br>
-                                    These personas served as vantage points from which I could imagine problematic scenarios related to medication use; they anchored my empathy and inspired solutions throughout the design process.
+                                    These personas anchored my empathy throughout the design process by serving as vantage points from which I could anticipate medication users' needs. 
                                 </div>
                             </div>
                         </div>
@@ -231,7 +236,7 @@ class Modal extends React.Component {
                                         "I need to undestand my diagnosis better. Are there alternatives to medication that could help me?"
                                     </div>
                                     <div className={styles.PersonaImg}>
-                                        <img src={Persona3} alt="Persona3"/>
+                                        <img src={Persona3} id="persona3" alt="Persona3"/>
                                     </div>
                                 </div>
                             </div>
@@ -247,10 +252,7 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    To broaden the scope from which I could brainstorm design themes, I created an exhaustive list of user-relevant problems, ideas, quotes, emotions, thoughts, and more.
-                                        <br></br>
-                                        <br></br>
-                                    I considered any information that could help me understand the realities of different types of psychiatric medication users valuable.
+                                    To broaden the scope from which I could brainstorm design themes, I created an exhaustive list of user-relevant problems, ideas, quotes, emotions, thoughts, and potential solutions.
                                 </div>
                             </div>
                         </div>
@@ -275,10 +277,10 @@ class Modal extends React.Component {
                                     To understand my competitive landscape, I analyzed existing mobile apps with goals similar to my own. 
                                         <br></br>
                                         <br></br>
-                                    The most significant drawback I identified was that all of my competitor's mood scales categorized mood from "very good" to "very bad", but did not capture the intensity of a given "positive" or "negative" mood. This method feels limited because it risks an implication that "high" moods are categorically good, and "low" moods are categorically bad. 
+                                    The most significant drawback I identified was that all of my competitors categorized mood from "very good" to "very bad". This measure feels limited as it risks an implication that "high" moods are categorically good, and "low" moods are categorically bad. 
                                         <br></br>
                                         <br></br>
-                                    To encourage a perspective that moods are dynamic, and all valuable for different reasons, I decided to include a second dimension in my mood scale that would measure mood intensity. 
+                                    To encourage a perspective that moods are dynamic and all valuable for different reasons, I decided to include a second dimension in my own mood scale that would measure mood intensity. 
                                 </div>
                             </div>
                         </div>
@@ -300,13 +302,13 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    The most important thing I recognized throughout my user research was that individuals taking psychiatric medication should not be acknowledged purely based on prescriptions of illness. 
+                                    The most important thing I recognized throughout my user research was that individuals taking psychiatric medication shouldn't be acknowledged purely based on prescriptions of illness. 
                                         <br></br>
                                         <br></br>
-                                    It felt crucial to promote a whole-person approach to mental health support by addressing factors not typically addressed within the confines of an app that measures mood. 
+                                    It felt crucial to promote a whole-person approach to mental health support– to recognize peripheral needs such as those related to interpersonal relationships, or therapy. 
                                         <br></br>
                                         <br></br>
-                                    To this end, in addition to providing users with data surrounding the impact (or lack thereof) of medication on daily well-being, I decided to build an online chat forum for people to connect about mental health, as well as a knowledge base to support users’ psycho-education. 
+                                    To this end, in addition to providing data surrounding the impact (or lack thereof) of medication on daily well-being, I decided to build an online chat forum for people to connect about mental health, as well as a knowledge base to support psycho-education. 
                                 </div>
                             </div>
                         </div>
@@ -328,9 +330,7 @@ class Modal extends React.Component {
                                 </div>
                                     <br></br>
                                 <div className={styles.Body}>
-                                    Iterating from my sketches, I digitized my design. 
-                                    
-                                    I assembled a comprehensive list of features and functions that would be necessary to implement in my code.  
+                                    Iterating from my sketches, I digitized my design and assembled a comprehensive list of features and functions that would be necessary to implement into my code.
                                 </div>   
                             </div>
                         </div>
@@ -370,7 +370,7 @@ class Modal extends React.Component {
                                         <br></br>
                                         <br></br>
                                     <div className={styles.Header2}>
-                                        ... and access educational content on mental health. 
+                                        ...and access educational content on mental health.
                                     </div>
                                         <br></br>
                                         <br></br>
@@ -395,15 +395,12 @@ class Modal extends React.Component {
                                     NEXT STEPS   
                                 </div>
                                 <div className={styles.Body2}>
-                                    I'm currently in the process of developing OKNOTOK using a ReactJS framework. The release date is set for mid-2023. 
+                                    I'm currently in the process of developing OK NOT OK using a ReactJS framework. The release date is set for mid-2023. 
                                         <br></br>
                                         <br></br>
-                                    <span>
-                                        If you are interested in becoming a beta user or learning more about the project, please contact 
-                                        <a href="mailto:OKNOTOKapp@gmail.com">
-                                             OKNOTOKapp@gmail.com
-                                        </a>
-                                        .
+                                    <span className={styles.NotSpan}>
+                                        If you are interested in becoming a beta user or learning more about the project, please contact<a className={styles.Link} href="mailto:OKNOTOKapp@gmail.com">OKNOTOKapp@gmail.com
+                                        </a>.
                                     </span>
                                         <br></br>
                                         <br></br>
