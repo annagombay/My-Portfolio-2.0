@@ -355,10 +355,6 @@ span {
     letter-spacing: 0.390625vw;
     line-height: 6.5625vw;
     cursor: pointer;
-
-
-
-
     border-radius: 3vw;
     z-index: 3;
     box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
@@ -366,10 +362,8 @@ span {
     margin-top: 3vw;
     justify-content: center;
     margin-left: 0vw;
-
     background-color: #fcdfe7;
     color: #F16A8D;
-
     border: .4vw solid #F16A8D;
 
   }

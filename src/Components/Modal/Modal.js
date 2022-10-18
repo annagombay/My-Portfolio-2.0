@@ -395,12 +395,11 @@ class Modal extends React.Component {
                                     NEXT STEPS   
                                 </div>
                                 <div className={styles.Body2}>
-                                    I'm currently in the process of developing OK NOT OK using a ReactJS framework. The release date is set for mid-2023. 
+                                    I'm currently in the process of developing OK NOT OK using a ReactJS framework. The release date is set for 2023. 
                                         <br></br>
                                         <br></br>
                                     <span className={styles.NotSpan}>
-                                        If you are interested in becoming a beta user or learning more about the project, please contact<a className={styles.Link} href="mailto:OKNOTOKapp@gmail.com">OKNOTOKapp@gmail.com
-                                        </a>.
+                                        If you are interested in becoming a beta user or learning more about the project, please contact <a className={styles.Link} href="mailto:OKNOTOKapp@gmail.com">OKNOTOKapp@gmail.com</a>.
                                     </span>
                                         <br></br>
                                         <br></br>
