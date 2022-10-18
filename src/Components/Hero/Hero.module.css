@@ -192,12 +192,10 @@
         background-color: #f16a8d;
         border: .4vw solid #fcdfe7;
         border-radius: 3vw;
-        /* margin-left: 5vw; */
         z-index: 3;
         box-shadow: rgba(241, 106, 141, 0.2) 0px 7px 29px 0px;
         cursor: pointer;
         margin-top: 30vw;
-        /* margin-right: 20vw; */
         justify-content: center;
         margin-left: 0vw;
     } 

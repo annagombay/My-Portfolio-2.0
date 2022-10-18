@@ -20,6 +20,7 @@ const Navbar = () => {
                     wrapper='div'
                     />
             </div>
+            
             <div className={styles.SocialLinks}>
                 <div className={styles.Squeeze}>
                     <span>

@@ -10,7 +10,8 @@
     position: sticky;
     top: 0;
     z-index: 6;
-    box-shadow: rgba(117, 174, 227, 0.2) 0px 0.625vw 1.875vw;
+    box-shadow: 0 .625vw 1.875vw rgba(117,174,227,.2);
+    background-size:100vw;
 }
 
 .Title {
@@ -79,70 +80,139 @@ button, a {
 
 /* PHONES */
 @media (max-width: 576px) {
-
-.NavContainer {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 25vw;
-    background-image: url(../../Assets/NavBkg.png);
-    background-size: 100vw;
-    background-position: cover;
-    position: sticky;
-    top: 0;
-    z-index: 6;
-    box-shadow: rgba(117, 174, 227, 0.2) 0px 0.625vw 1.875vw;
+    .NavContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 25vw;
+        background-image: url(../../Assets/NavBkg.png);
+        background-size: 100vw;
+        background-position: cover;
+        position: sticky;
+        top: 0;
+        z-index: 6;
+        box-shadow: rgba(117, 174, 227, 0.2) 0px 0.625vw 1.875vw;
+    }
     
-}
+    .Title {
+        width: 100vw;
+        height: 6vw;
+        line-height: 6vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 8vw;
+        letter-spacing: .02vw;
+        color: black;
+        margin-left: 4vw;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .SocialLinks{
+        width: 5vw;
+        height: 4vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 2vw;
+        z-index: 5;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
-.Title {
-    width: 100vw;
-    height: 6vw;
-    line-height: 6vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-family: 'Cedarville Cursive', cursive;
-    font-weight: 400;
+    .Squeeze {
+        display: flex;
+        flex-direction: row;
+        width: 12vw;
+        height: 0vw;
+        margin-top: .5vw;
+        justify-content: flex-end;
+    }
 
-    font-size: 8vw;
-    letter-spacing: .02vw;
-    color: black;
-    margin-left: 4vw;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    .SocialLink{
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        z-index: 5;
+    }
 
-.SocialLinks{
-    display:flex;height:10vw;padding-left:2vw;position:relative;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:10vw;z-index:5;
-}
+    span {
+        all: inherit;
+    }
 
-.SocialLink{
+    button, a {
+        all: inherit;
+    }
+    /* .NavContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 25vw;
+        background-image: url(../../Assets/NavBkg.png);
+        background-size: 100vw;
+        background-position: cover;
+        position: sticky;
+        top: 0;
+        z-index: 6;
+        box-shadow: rgba(117, 174, 227, 0.2) 0px 0.625vw 1.875vw;
+    }
+    
+    .Title {
+        width: 100vw;
+        height: 6vw;
+        line-height: 6vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 8vw;
+        letter-spacing: .02vw;
+        color: black;
+        margin-left: 4vw;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .SocialLinks{
+        width: 5vw;
+        height: 4vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 2vw;
+        z-index: 5;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
+    .Squeeze {
+        display: flex;
+        flex-direction: row;
+        width: 12vw;
+        height: 4vw;
+        justify-content: flex-end;
+    }
 
-    height:10vw;justify-content:flex-end;margin-right:4vw;width:40vw;z-index:5;
-}
+    .SocialLink{
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        z-index: 5;
+    }
 
-.Squeeze {
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
-    width:11vw;
-}
+    span {
+        all: inherit;
+    }
 
-span {
-    all: inherit;
-}
-
-button {
-    all: inherit;
-}
-
-a {
-    margin-top: -2vw;
-}
-
+    button, a {
+        all: inherit;
+    } */
 }
 
 /* TABLETS */
@@ -179,48 +249,42 @@ a {
     }
     
     .SocialLinks{
-        width: 40vw;
-        height: 10vw;
+        width: 5vw;
+        height: 4vw;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        margin-right: 4vw;
+        margin-right: 2vw;
         z-index: 5;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
     }
-    
+
+    .Squeeze {
+        display: flex;
+        flex-direction: row;
+        width: 12vw;
+        height: 0vw;
+        margin-top: .5vw;
+        justify-content: flex-end;
+    }
+
     .SocialLink{
         width: 10vw;
         height: 10vw;
         display: flex;
-        padding-left: 2vw;
         z-index: 5;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
     }
-    
-    .Squeeze {
-        display: flex;
-        flex-direction: row;
-        width: 11vw;
-        justify-content: flex-end;
-    }
-    
+
     span {
         all: inherit;
     }
-    
-    button {
+
+    button, a {
         all: inherit;
     }
 
-    a {
-        margin-top: -2vw;
-    }
-   
 }
 
 /* LAPTOPS */

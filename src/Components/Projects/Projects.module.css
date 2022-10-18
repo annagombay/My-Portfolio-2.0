@@ -190,6 +190,29 @@ span {
   font-weight: bold;
   position: inline;
 }
+
+.Footer {
+  width:100vw;
+  color:#1d1b26;
+  font-family: "Roboto",sans-serif;
+  font-size: .9375vw;
+  font-weight: 700;
+  letter-spacing: .03125vw;
+  line-height: 1.40625vw;
+  padding: 1vw;
+  text-align: center;
+  align-items: center;
+  background-image: url(./../../Assets/NavBkg.png);
+  border-top: .15vw solid #c2edf4;
+  margin-top: -.15vw;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content:flex-start;
+  object-fit: cover;
+  text-align: start;
+}
+
 /* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
 /* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/
 /* ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^____ ____^___*/

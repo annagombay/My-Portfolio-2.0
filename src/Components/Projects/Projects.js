@@ -23,7 +23,7 @@ function Projects() {
                             </div>
                             <div className={styles.WrapperRow}>
                                 <div className={styles.Title}>
-                                    OKNOTOK
+                                    OK NOT OK
                                 </div>
                             </div>
                             <div className={styles.WrapperRow}>
@@ -39,7 +39,13 @@ function Projects() {
                         </div>
                     </div>
                     <Modal onClose={ () => setShow(false)} show={show}/>
+                    
                 </div>
+                {/* <div className={styles.FooterWrapper}> */}
+                        <div className={styles.Footer}>
+                            Anna Gombay Design © 2022 | All rights reserved 
+                        </div>
+                    {/* </div> */}
             </div>
         )          
     }
